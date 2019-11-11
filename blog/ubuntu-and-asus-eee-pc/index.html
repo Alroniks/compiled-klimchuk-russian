@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru-BY">
+<head>
+  
+  <title>Ubuntu и ASUS EEE PC — настраиваем подсветку экрана – Заметки | Иван Климчук</title>
+  
+  <meta name="generator" content="Hugo 0.59.1" />
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    
+    <meta name="description" content="Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке.">
+    
+
+
+
+
+<meta property="og:title" content="Ubuntu и ASUS EEE PC — настраиваем подсветку экрана" />
+<meta property="og:description" content="Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://klimchuk.by/blog/ubuntu-and-asus-eee-pc/" />
+<meta property="article:published_time" content="2011-03-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2011-03-02T00:00:00+00:00" /><meta property="og:site_name" content="Иван Климчук" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ubuntu и ASUS EEE PC — настраиваем подсветку экрана"/>
+<meta name="twitter:description" content="Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке."/>
+
+<meta itemprop="name" content="Ubuntu и ASUS EEE PC — настраиваем подсветку экрана">
+<meta itemprop="description" content="Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке.">
+
+
+<meta itemprop="datePublished" content="2011-03-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2011-03-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="217">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<link rel="canonical" href="https://klimchuk.by/blog/ubuntu-and-asus-eee-pc/">
+
+<meta name="author" content="Ivan Klimchuk <ivan@klimchuk.com>">
+
+<link rel="alternate" type="application/rss+xml" title="Иван Климчук. Заметки" href="https://klimchuk.by/index.xml">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+<link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        
+        $(".navbar-burger").click(function() {
+            
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+        });
+    });
+</script>
+
+
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(53330836, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/53330836" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+</head>
+<body>
+  <header class="section">
+  <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item is-desktop-hidden" href="/">
+          <strong class="title is-5">Иван Климчук</strong>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navigation">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navigation" class="navbar-menu">
+        <div class="navbar-start">
+          
+          
+          <a href="https://klimchuk.by/blog" class="navbar-item">
+            <span class="navbar-item-name">Заметки</span>
+          </a>
+          
+          <a href="https://klimchuk.by/places" class="navbar-item">
+            <span class="navbar-item-name">Места</span>
+          </a>
+          
+          <a href="https://klimchuk.by/projects" class="navbar-item">
+            <span class="navbar-item-name">Проекты</span>
+          </a>
+          
+          
+            <a class="navbar-item is-mobile-hidden about-me has-text-grey" href="https://klimchuk.by/">
+              <strong class="title is-6">&xlarr;&nbsp;&nqbsp;обо мне</strong>
+            </a>
+          
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item translations">
+            
+              
+                <span>Ru</span>
+              
+            
+              
+            <a href="https://klimchuk.com/"><span>En</span></a>
+              
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <div class="main section">
+      
+<div class="container">
+    <article class="post">
+        <div class="tags above-title">
+            <a class="tag is-medium is-white is-truncated" href='https://klimchuk.by/blog/'>&larr; Все заметки</a>
+        </div>
+
+        <h1 class="title is-2 is-size-3-mobile is-spaced">Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</h1>
+        <div class="subtitle has-text-grey">
+            
+            <time pubdate="" datetime="03-02-2011 00:00:00">2 марта 2011</time>
+        </div>
+
+        <div class="columns is-mobile-reversed">
+            <div class="column is-7">
+                <div class="content">
+                    
+
+                    <p>Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке. Почистить зверинец вирусов, вообще все почистить, чем и занялся сегодня вечером. В целом расписывать что и как было не стану. Запишу лишь себе одно напоминание, которое возможно понадобится еще кому-нибудь.</p>
+
+<p>В свое время долго мучился я с нерабочей подсветкой в своей машинке. Т.е. плохо работала кнопка &ldquo;fn&rdquo;. Нажимал, а оно подсветку рандомно меняло при каждом нажатии, хотя апплет правильно показывал положение ползунка. Я нашел решение когда-то и забыл про него. При установке повезло вспомнить о том, что проблемы были и я решил записать это решение, чтобы в случае чего потом знать, где искать.</p>
+
+<p>А делается все просто (по крайней мере для моего аппарата).</p>
+
+<p>Для начала открываем любимую консоль и пишем:</p>
+
+<pre><code class="language-bash">sudo nano /etc/default/grub
+</code></pre>
+
+<p>Там находим строчку вида <code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;тут какие-то параметры могут быть&quot;</code></p>
+
+<p>И дописываем туда свои параметры. У меня в итоге получилось следующее:</p>
+
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash acpi_osi=Linux acpi_backlight=vendor&quot;
+</code></pre>
+
+<p>Нажимаем <code>Ctrl+O</code>, затем <code>Ctrl+X</code> и выполняем обновление конфигурации grub:</p>
+
+<pre><code class="language-bash">sudo update-grub
+</code></pre>
+
+<p>И перезагружаемся. Теперь проблем быть не должно. Если проблемы есть, ну тогда поздравляю вас с новым диагнозом - красноглазие ;)</p>
+
+                </div>
+                <div class="tags">
+                    
+                    
+                    
+                    <a class="tag is-link" href="https://klimchuk.by/categories/tech/">Технологии</a>
+                    
+                    
+                    
+                    
+                    <a class="tag is-link" href="https://klimchuk.by/categories/dev/">Разработка</a>
+                    
+                    
+                    <span class="tag">читать 2 мин</span> 
+                    <span class="tag">слов 217</span> 
+                </div>
+
+                <aside class="menu under-post-navigation">
+                    <ul class="menu-list is-flex">
+                        
+                        <li><a href="https://klimchuk.by/blog/new-on-the-site/">&larr; Новое на сайте</a></li>
+                        
+                        
+                        <li><a href="https://klimchuk.by/blog/changes-are-coming/">Изменения грядут! &rarr;</a></li>
+                        
+                    </ul>
+                </aside>
+            </div>
+            <div class="column is-1"></div>
+            <div class="column is-4">
+                <aside class="menu">
+                    
+
+                </aside>
+            </div>
+        </div>
+    </article>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item copy">&copy; 2010 — 2019.</div>
+            </div>
+            <div class="level-right">
+                <div class="content">
+                    <a class="button is-small is-light is-rounded" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" title="Лицензия">CC BY-NC-SA 4.0</a>
+                    <a class="button is-small is-link is-rounded" href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a>
+                    <a class="button is-small is-dark is-rounded" target="_blank" href="https://github.com/Alroniks">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

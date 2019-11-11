@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Места on Иван Климчук</title>
+    <link>https://klimchuk.by/places/</link>
+    <description>Recent content in Места on Иван Климчук</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-BY</language>
+    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://klimchuk.by/places/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Дукора и перевернутый дом</title>
+      <link>https://klimchuk.by/places/dukora/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/dukora/</guid>
+      <description>На выходные решили выбраться куда-нибудь с ребенком и решили съездить в посёлок Дукора, что недалеко от Минска.
+Это одна из нескольких известных усадеб в окрестностях Минска. На входе встречает вот такая отреставрированная брама, внутри которой находится касса и сувенирная лавка. Можно подняться и на самых верх, хотя смотреть сверху особо не на что.</description>
+    </item>
+    
+    <item>
+      <title>Амстердам и поездка на конферецию</title>
+      <link>https://klimchuk.by/places/amsterdam-2019/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/amsterdam-2019/</guid>
+      <description>В марте меня пригласили выступить на MODX митапе в Амстердаме.
+Закинул вещи в рюкзак и поехал. Поездка была не самой простой, пять перелетов за 3 дня!
+Поездка была сугубо рабочая, готовил в пути доклад, монтировал подкаст и делал прочие рутинные дела, поэтому по сторонам особо не было времени смотреть.</description>
+    </item>
+    
+    <item>
+      <title>Друскининкай и парк Анастаса Чеснулиса</title>
+      <link>https://klimchuk.by/places/druskininkai-2019/</link>
+      <pubDate>Thu, 14 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/druskininkai-2019/</guid>
+      <description>В середине марта решили устроить себе тур выходного дня и съездить в аквапарк в Друскининкай, что в Литве.
+Я был в отпуске, поэтому для поездки выбрали будний день, чтобы избежать очередей на границе, которые регулярно случаются. Погода была не самая приятная, с мелким противным дождичком, но солнце иногда все же проглядывало и удалось немного прогуляться по окрестностям.</description>
+    </item>
+    
+    <item>
+      <title>Барановичи. По городам Беларуси</title>
+      <link>https://klimchuk.by/places/baranovichi-2010/</link>
+      <pubDate>Tue, 24 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/baranovichi-2010/</guid>
+      <description>Просидев весь день в субботу дома и ничего толком не сделав, я пришел к выводу, что трачу время зря. Пока есть возможности и нету обязательств и семьи, нужно тратить время с пользой и решил, что нужно все таки куда-нибудь съездить.</description>
+    </item>
+    
+  </channel>
+</rss>

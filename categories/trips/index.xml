@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Поездки on Иван Климчук</title>
+    <link>https://klimchuk.by/categories/trips/</link>
+    <description>Recent content in Поездки on Иван Климчук</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-BY</language>
+    <lastBuildDate>Tue, 06 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://klimchuk.by/categories/trips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Дома вкусно кормят - 2</title>
+      <link>https://klimchuk.by/blog/tasty-food-at-home-2/</link>
+      <pubDate>Tue, 06 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/tasty-food-at-home-2/</guid>
+      <description>Как и обещал, решил рассказать о втором дне поездки домой. К сожалению, время нашлось только сейчас и все в деталях уже не помню, но постараюсь вспомнить самое интересное.
+Утро Утро было самым обычным. Летом дома как всегда жарко до невыносимости, но я спал как убитый.</description>
+    </item>
+    
+    <item>
+      <title>Дома вкусно кормят</title>
+      <link>https://klimchuk.by/blog/tasty-food-at-home/</link>
+      <pubDate>Sun, 30 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/tasty-food-at-home/</guid>
+      <description>На этих выходным по просьбам родителей, да и так уже по необходимости изредка появляться домой, ездил к себе на родину, в свой родной город. Там я уже не живу 4 года (ровно столько я учусь в университете). Поездкой я остался весьма доволен, что-то успел запечатлеть на фото, когда телефон с камерой был под рукой.</description>
+    </item>
+    
+  </channel>
+</rss>

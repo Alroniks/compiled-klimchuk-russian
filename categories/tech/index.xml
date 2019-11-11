@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Технологии on Иван Климчук</title>
+    <link>https://klimchuk.by/categories/tech/</link>
+    <description>Recent content in Технологии on Иван Климчук</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-BY</language>
+    <lastBuildDate>Thu, 07 Jul 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://klimchuk.by/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Просто подкаст. Номер 0</title>
+      <link>https://klimchuk.by/blog/just-podcast-episode-0/</link>
+      <pubDate>Thu, 07 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/just-podcast-episode-0/</guid>
+      <description>Шоу-ноты  Вступление.О чем я вообще?
+ Ах да! Я закончил универ! :)
+ Почему я не хочу менять работу и согласен получать меньше
+ А как же без личных проектов? Они есть!
+ Велосипед. Страсть
+ Пишите предложения</description>
+    </item>
+    
+    <item>
+      <title>CSS Naked Day</title>
+      <link>https://klimchuk.by/blog/css-naked-day/</link>
+      <pubDate>Sat, 09 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/css-naked-day/</guid>
+      <description>9 апреля во всем мире проводится день без CSS - CSS Naked Day. Web-мастера отключают на своих сайтах весь css и показывают свой сайт голым, т.е. только верстка в html, без какого-либо оформления.
+Скажете, зачем? Особо то может и не зачем, но я вижу в этом большую пользу.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</title>
+      <link>https://klimchuk.by/blog/ubuntu-and-asus-eee-pc/</link>
+      <pubDate>Wed, 02 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/ubuntu-and-asus-eee-pc/</guid>
+      <description>Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке.</description>
+    </item>
+    
+    <item>
+      <title>Ruby, Python &amp; more Meetup</title>
+      <link>https://klimchuk.by/blog/ruby-python-more-meetup/</link>
+      <pubDate>Sun, 21 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/ruby-python-more-meetup/</guid>
+      <description>Ruby, Python &amp;amp; more Meetup  &amp;ldquo;В споре рождается истина&amp;rdquo;
+ В ходе дискуссии &amp;ldquo;Ruby vs Python&amp;rdquo; во время конференции Деловой интернет участники сошлись во мнении, что на мероприятиях нужно не просто говорить о технологиях, но и работать с ними.</description>
+    </item>
+    
+    <item>
+      <title>Перестал работать Вконтакте</title>
+      <link>https://klimchuk.by/blog/stopped-working-vk/</link>
+      <pubDate>Sun, 05 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/stopped-working-vk/</guid>
+      <description>Перестал работать Вконтакте Вот уже 2 день не работает социальная сеть &amp;ldquo;Вконтакте&amp;rdquo;. Учитывая то, что я живу в Беларуси, как и многие, сразу начали грешить на известный скандальный указ №60. Но со временем ситуация проясняется и паниковать не стоит.</description>
+    </item>
+    
+    <item>
+      <title>Завершился круглый стол по Rails в Минске</title>
+      <link>https://klimchuk.by/blog/round-table-on-rails-in-minsk/</link>
+      <pubDate>Wed, 23 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/round-table-on-rails-in-minsk/</guid>
+      <description>Все таки попал я на эту конференцию, хотя злоключений по пути было, но сейчас не об этом.
+Начало К началу я не успел, к сожалению, и опоздал минут на 10. К тому времени, когда я зарегистрировался, уже потихоньку началось выступление.</description>
+    </item>
+    
+  </channel>
+</rss>

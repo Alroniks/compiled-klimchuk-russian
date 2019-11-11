@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://klimchuk.by/</loc>
+    <lastmod>2019-10-04T09:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/</loc>
+    <lastmod>2019-10-04T09:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/dev/</loc>
+    <lastmod>2019-10-04T09:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/dev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/dev/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/recovery/</loc>
+    <lastmod>2019-10-04T09:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/belarus/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/countries/belarus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/countries/belarus/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/dukora/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/amsterdam-2019/</loc>
+    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/netherlands/</loc>
+    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/countries/netherlands/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/countries/netherlands/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/druskininkai-2019/</loc>
+    <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/lithuania/</loc>
+    <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/countries/lithuania/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/countries/lithuania/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/results-and-facts-2014/</loc>
+    <lastmod>2014-12-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/opinion/</loc>
+    <lastmod>2014-03-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/opinion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/opinion/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/wrong-tools-and-procrastination/</loc>
+    <lastmod>2014-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/automatism/</loc>
+    <lastmod>2013-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/inertia-thoughts/</loc>
+    <lastmod>2012-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/books/</loc>
+    <lastmod>2011-12-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/age-23/</loc>
+    <lastmod>2011-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/life/</loc>
+    <lastmod>2011-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/life/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/life/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/stereotypes/</loc>
+    <lastmod>2011-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/social-networks-and-time/</loc>
+    <lastmod>2011-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/godfather/</loc>
+    <lastmod>2011-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/modx/</loc>
+    <lastmod>2011-09-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/modx/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/modx/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/modx-cooking-recipes/</loc>
+    <lastmod>2011-09-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/good-and-evil/</loc>
+    <lastmod>2011-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/hypocrisy-lives-in-each/</loc>
+    <lastmod>2011-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/real-names-and-anonymity-online/</loc>
+    <lastmod>2011-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/new-blog-engine/</loc>
+    <lastmod>2011-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/just-podcast-episode-0/</loc>
+    <lastmod>2011-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/tech/</loc>
+    <lastmod>2011-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/tech/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/time-money-save/</loc>
+    <lastmod>2011-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/bike/</loc>
+    <lastmod>2011-04-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/bike/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/bike/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/first-biking/</loc>
+    <lastmod>2011-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/css-naked-day/</loc>
+    <lastmod>2011-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/do-not-fuck-my-brain/</loc>
+    <lastmod>2011-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/changes-are-coming/</loc>
+    <lastmod>2011-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/ubuntu-and-asus-eee-pc/</loc>
+    <lastmod>2011-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/new-on-the-site/</loc>
+    <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/about-event-and-plans/</loc>
+    <lastmod>2010-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/modx-205/</loc>
+    <lastmod>2010-12-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/ruby-python-more-meetup/</loc>
+    <lastmod>2010-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/site-version-for-netbooks/</loc>
+    <lastmod>2010-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/mobile-version/</loc>
+    <lastmod>2010-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/jump-off-the-bridge/</loc>
+    <lastmod>2010-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/stopped-working-vk/</loc>
+    <lastmod>2010-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/baranovichi-2010/</loc>
+    <lastmod>2010-08-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/biking-in-minsk/</loc>
+    <lastmod>2010-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/tasty-food-at-home-2/</loc>
+    <lastmod>2010-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/trips/</loc>
+    <lastmod>2010-07-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/trips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/trips/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/counting-incorrect/</loc>
+    <lastmod>2010-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/round-table-on-rails-in-minsk/</loc>
+    <lastmod>2010-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/comment-in-the-blog/</loc>
+    <lastmod>2010-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/favicon-on-site/</loc>
+    <lastmod>2010-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/the-new-site-design/</loc>
+    <lastmod>2010-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/tasty-food-at-home/</loc>
+    <lastmod>2010-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/blog/the-first-blog-entry/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/brevetby/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/iddmby/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/modcastby/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/modcastsvideo/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/modxby/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/namoveby/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/pravilnaby/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/poland/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/germany/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/egypt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/spain/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/latvia/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/luxembourg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/usa/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/ukraine/</loc>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/countries/estonia/</loc>
+  </url>
+  
+</urlset>

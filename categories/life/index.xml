@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Жизнь on Иван Климчук</title>
+    <link>https://klimchuk.by/categories/life/</link>
+    <description>Recent content in Жизнь on Иван Климчук</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-BY</language>
+    <lastBuildDate>Fri, 16 Dec 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://klimchuk.by/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Возраст: 23</title>
+      <link>https://klimchuk.by/blog/age-23/</link>
+      <pubDate>Fri, 16 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/age-23/</guid>
+      <description>23 года это много или мало?
+Ответа нет. Есть просто возраст и осознание, чего ты к этому возрасту добился. И плохо, если осознаешь, что за последний год почти ничего не изменилось. Время то идет, жизнь вокруг меняется, а ты застыл. Такое можно простить старику в его 80 лет, когда он, повидавший мир и узнавший все его стороны, желает просто отдохнуть от всей этой суеты.</description>
+    </item>
+    
+    <item>
+      <title>Крестный отец</title>
+      <link>https://klimchuk.by/blog/godfather/</link>
+      <pubDate>Sun, 16 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/godfather/</guid>
+      <description>Сегодня утром я был посвящен в таинство крещения и стал крестным отцом будущему мужчине Серафиму. Для меня это было в новинку и, честно признаться, пришлось немного поволноваться. Много нового, куча неизвестного, я не владею и не контролирую ситацию. Но деваться некуда, отказываться не принято вообще, так что справился.</description>
+    </item>
+    
+    <item>
+      <title>О событиях, планах</title>
+      <link>https://klimchuk.by/blog/about-event-and-plans/</link>
+      <pubDate>Mon, 27 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/about-event-and-plans/</guid>
+      <description>Не буду в посте влезать в политику, так уже многое сказано и показано. Я не остался равнодушен, но не то настроение сейчас, чтобы писать об этом в блог.
+Тема данного поста немного другая. События в заголовке упомянуты неспроста. Я извиняюсь за редкие записи в блоге, но на то он и дневник, чтобы писать сюда когда есть время и желание.</description>
+    </item>
+    
+    <item>
+      <title>Прыжок с моста на радиаторном</title>
+      <link>https://klimchuk.by/blog/jump-off-the-bridge/</link>
+      <pubDate>Sun, 12 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/blog/jump-off-the-bridge/</guid>
+      <description>Совсем недавно я переборол еще один природный страх - страх перед высотой. Хотя для меня страха как такового и не было, но человек всегда боится высоты, так как действует инстинкт самосохранения. Упасть с высоты - значит гарантированно разбиться, зачастую насмерть, поэтому организм и мозг пытаются таким образом нас защитить.</description>
+    </item>
+    
+  </channel>
+</rss>
