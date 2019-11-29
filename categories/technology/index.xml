@@ -6,10 +6,19 @@
     <description>Recent content in Технологии on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Thu, 07 Jul 2011 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 06:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Реинкарнация сайта</title>
+      <link>https://klimchuk.by/notes/blog-reincarnation/</link>
+      <pubDate>Fri, 29 Nov 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/notes/blog-reincarnation/</guid>
+      <description>Как было раньше Когда-то давно, в самом начале, сайт работал на моей собственной Alroniks CMS, затем был генератор статических сайтов Dockpad (проект умер), после была попытка запустить сайт на MODX, но неуспешная. Какое-то время сайт работал на Laravel, но и его я устал обслуживать.</description>
+    </item>
     
     <item>
       <title>Просто подкаст. Номер 0</title>
