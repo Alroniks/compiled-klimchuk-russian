@@ -5,6 +5,8 @@
   <url>
     <loc>https://klimchuk.by/</loc>
     <lastmod>2019-11-29T06:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -20,21 +22,29 @@
   <url>
     <loc>https://klimchuk.by/notes/</loc>
     <lastmod>2019-11-29T06:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/blog-reincarnation/</loc>
     <lastmod>2019-11-29T06:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/categories/technology/</loc>
     <lastmod>2019-11-29T06:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/belarus/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,11 +60,15 @@
   <url>
     <loc>https://klimchuk.by/places/dukora/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/places/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -70,11 +84,15 @@
   <url>
     <loc>https://klimchuk.by/places/amsterdam-2019/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/netherlands/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -90,11 +108,15 @@
   <url>
     <loc>https://klimchuk.by/places/druskininkai-2019/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/lithuania/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -110,11 +132,15 @@
   <url>
     <loc>https://klimchuk.by/notes/results-and-facts-2014/</loc>
     <lastmod>2014-12-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/categories/opinion/</loc>
     <lastmod>2014-03-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -130,36 +156,50 @@
   <url>
     <loc>https://klimchuk.by/notes/wrong-tools-and-procrastination/</loc>
     <lastmod>2014-03-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/categories/development/</loc>
     <lastmod>2014-03-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/automatism/</loc>
     <lastmod>2013-09-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/inertia-thoughts/</loc>
     <lastmod>2012-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/books/</loc>
     <lastmod>2011-12-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/age-23/</loc>
     <lastmod>2011-12-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/categories/life/</loc>
     <lastmod>2011-12-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -175,21 +215,29 @@
   <url>
     <loc>https://klimchuk.by/notes/stereotypes/</loc>
     <lastmod>2011-12-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/social-networks-and-time/</loc>
     <lastmod>2011-12-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/godfather/</loc>
     <lastmod>2011-10-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/categories/modx/</loc>
     <lastmod>2011-09-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -205,126 +253,176 @@
   <url>
     <loc>https://klimchuk.by/notes/modx-cooking-recipes/</loc>
     <lastmod>2011-09-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/good-and-evil/</loc>
     <lastmod>2011-07-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/hypocrisy-lives-in-each/</loc>
     <lastmod>2011-07-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/real-names-and-anonymity-online/</loc>
     <lastmod>2011-07-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/new-blog-engine/</loc>
     <lastmod>2011-07-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/just-podcast-episode-0/</loc>
     <lastmod>2011-07-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/time-money-save/</loc>
     <lastmod>2011-05-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/categories/cycling/</loc>
     <lastmod>2011-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/first-biking/</loc>
     <lastmod>2011-04-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/css-naked-day/</loc>
     <lastmod>2011-04-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/do-not-fuck-my-brain/</loc>
     <lastmod>2011-03-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/changes-are-coming/</loc>
     <lastmod>2011-03-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/ubuntu-and-asus-eee-pc/</loc>
     <lastmod>2011-03-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/new-on-the-site/</loc>
     <lastmod>2011-02-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/about-event-and-plans/</loc>
     <lastmod>2010-12-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/modx-205/</loc>
     <lastmod>2010-12-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/ruby-python-more-meetup/</loc>
     <lastmod>2010-11-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/site-version-for-netbooks/</loc>
     <lastmod>2010-10-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/mobile-version/</loc>
     <lastmod>2010-09-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/jump-off-the-bridge/</loc>
     <lastmod>2010-09-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/stopped-working-vk/</loc>
     <lastmod>2010-09-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/places/baranovichi-2010/</loc>
     <lastmod>2010-08-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/biking-in-minsk/</loc>
     <lastmod>2010-08-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/tasty-food-at-home-2/</loc>
     <lastmod>2010-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/categories/trips/</loc>
     <lastmod>2010-07-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -340,36 +438,50 @@
   <url>
     <loc>https://klimchuk.by/notes/counting-incorrect/</loc>
     <lastmod>2010-07-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/round-table-on-rails-in-minsk/</loc>
     <lastmod>2010-06-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/comment-in-the-blog/</loc>
     <lastmod>2010-06-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/favicon-on-site/</loc>
     <lastmod>2010-06-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/the-new-site-design/</loc>
     <lastmod>2010-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/tasty-food-at-home/</loc>
     <lastmod>2010-05-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/notes/the-first-blog-entry/</loc>
     <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -409,42 +521,62 @@
   
   <url>
     <loc>https://klimchuk.by/countries/poland/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/germany/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/egypt/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/spain/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/latvia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/luxembourg/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/projects/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/usa/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/ukraine/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://klimchuk.by/countries/estonia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>
