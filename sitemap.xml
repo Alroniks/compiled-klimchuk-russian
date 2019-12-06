@@ -116,6 +116,16 @@
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/amsterdam-2019/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/amsterdam-2019/"
+                />
   </url>
   
   <url>
