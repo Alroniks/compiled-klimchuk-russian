@@ -38,6 +38,16 @@
     <lastmod>2019-11-29T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/technology/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/technology/"
+                />
   </url>
   
   <url>
@@ -165,6 +175,16 @@
     <lastmod>2014-03-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/development/"
+                />
   </url>
   
   <url>
@@ -304,6 +324,16 @@
     <lastmod>2011-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/cycling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/cycling/"
+                />
   </url>
   
   <url>
