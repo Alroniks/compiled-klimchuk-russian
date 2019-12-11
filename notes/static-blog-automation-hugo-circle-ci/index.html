@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru-BY" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# fb: http://ogp.me/ns/fb#">
+<head>
+  
+  <title>Автоматизация блога на Hugo с помощью CircleCI – Заметки | Иван Климчук</title>
+  
+  <meta name="generator" content="Hugo 0.60.1" />
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Рассказываю, как можно сделать свой сайт на двух языках, сгенерировать его с помощью Hugo, разместить на бесплатном хостинге GitHub Pages и сделать так, чтобы это все происходило автоматически благодаря CircleCI.">
+
+
+
+
+<link rel="canonical" href="https://klimchuk.by/notes/static-blog-automation-hugo-circle-ci/">
+
+<meta name="author" content="Ivan Klimchuk <ivan@klimchuk.com>">
+
+<link rel="alternate" type="application/rss+xml" title="Иван Климчук. Заметки" href="https://klimchuk.by/index.xml">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+<link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        
+        $(".navbar-burger").click(function() {
+            
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+        });
+    });
+</script>
+
+
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(53330836, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/53330836" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+
+<meta name="yandex-verification" content="97cfe04c3aabe4cd" />
+
+
+<meta name="yandex-verification" content="ab43473b398804d8" />
+
+
+  
+    <meta property="article:author" content="Иван Климчук">
+    
+        
+        
+            <meta property="article:section" content="Разработка">
+        
+    
+
+    
+        
+        
+        
+        <meta property="og:image" content='http://og-image.alroniks.now.sh/Автоматизация%20блога%20на%20Hugo%20с%20помощью%20CircleCI.png?theme=light&fontSize=90px'>
+        <meta property="og:image:width" content="2048">
+        <meta property="og:image:height" content="1170">
+
+        <meta name="twitter:image" content="http://og-image.alroniks.now.sh/Автоматизация%20блога%20на%20Hugo%20с%20помощью%20CircleCI.png?theme=light&fontSize=90px">
+        <meta name="twitter:card" content="summary_large_image">
+    
+
+
+  <meta property="og:title" content="Автоматизация блога на Hugo с помощью CircleCI" />
+<meta property="og:description" content="Рассказываю, как можно сделать свой сайт на двух языках, сгенерировать его с помощью Hugo, разместить на бесплатном хостинге GitHub Pages и сделать так, чтобы это все происходило автоматически благодаря CircleCI." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://klimchuk.by/notes/static-blog-automation-hugo-circle-ci/" />
+<meta property="article:published_time" content="2019-12-11T06:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-11T06:00:00+00:00" /><meta property="og:site_name" content="Иван Климчук" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Автоматизация блога на Hugo с помощью CircleCI"/>
+<meta name="twitter:description" content="Рассказываю, как можно сделать свой сайт на двух языках, сгенерировать его с помощью Hugo, разместить на бесплатном хостинге GitHub Pages и сделать так, чтобы это все происходило автоматически благодаря CircleCI."/>
+
+</head>
+<body>
+  <header class="section">
+  <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item is-hidden-desktop" href="/">
+          <strong class="title is-5">Иван Климчук</strong>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navigation">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navigation" class="navbar-menu">
+        <div class="navbar-start">
+          
+          
+          <a href="https://klimchuk.by/notes" class="navbar-item">
+            <span class="navbar-item-name">Заметки</span>
+          </a>
+          
+          <a href="https://klimchuk.by/places" class="navbar-item">
+            <span class="navbar-item-name">Места</span>
+          </a>
+          
+          <a href="https://klimchuk.by/projects" class="navbar-item">
+            <span class="navbar-item-name">Проекты</span>
+          </a>
+          
+          
+            <a class="navbar-item is-hidden-mobile about-me has-text-grey" href="https://klimchuk.by/">
+              <strong class="title is-6">&xlarr;&nbsp;&nbsp;обо мне</strong>
+            </a>
+          
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item translations">
+            
+              
+                <span>Ru</span>
+              
+            
+              
+            <a href="https://klimchuk.com/"><span>En</span></a>
+              
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <div class="main section">
+      
+<div class="container">
+    <div class="columns is-mobile-columns">
+        <div class="column is-8">
+            <article class="post">
+                <header class="subtitle is-spaced">
+                    <div class="tags above-title">
+                        <a class="tag is-medium is-white is-truncated" href='https://klimchuk.by/notes/'>&larr; Все заметки</a>
+                    </div>
+                    <h1 class="title is-2 is-size-3-mobile is-spaced">Автоматизация блога на Hugo с помощью CircleCI</h1>
+<div class="has-text-grey is-mobile-columns">
+
+    
+    
+        <time pubdate="" datetime="12-11-2019 06:00:00">11 декабря 2019</time>
+    
+
+    
+</div>
+
+                </header>
+                <div class="content">
+                    
+
+                    
+                    <div class="message is-black is-size-5">
+                        <div class="message-body">
+                            Рассказываю, как можно сделать свой сайт на двух языках, сгенерировать его с помощью Hugo, разместить на бесплатном хостинге GitHub Pages и сделать так, чтобы это все происходило автоматически благодаря CircleCI.
+                        </div>
+                    </div>
+                    
+
+                    <p>В прошлой заметке <a href="https://klimchuk.by/notes/blog-reincarnation/">&ldquo;Реинкарнация сайта&rdquo;</a> я рассказывал, как сейчас устроен мой сайт, но давайте все же углубимся в детали и я подробно расскажу, как можно автоматизировать процесс публикации заметок в блоге, когда у вас статический сайт.</p>
+<p>На первый взгляд статический сайт выглядит идеальным решением, потому как собирается относительно быстро, собой представляет набор файлов и не требователен к хостингу. Однако, работать с ним может быть не очень удобно, особенно если мы говорим о формате блога, где важно фокусироваться на содержимом, а не на его обслуживании.</p>
+<p>В случае со статическим сайтом, мы сначала пишем текст, добавляем оформление, компилируем генератором и загружаем результат куда-то на хостинг. Если мы исправили ошибку в тексте, мы проделываем тоже самое. И так каждый раз, на каждое изменение. Согласитесь, непростительная трата времени. Это можно и нужно автоматизировать.</p>
+<p>В моем случае все осложняется еще и тем, что у сайта два языка, для каждого языка своя версия сайта и свой адрес, что означает практически два отдельных хостинга, какими бы простыми они не были. Однако, когда рутинные операции автоматизированы, из недостатка этот факт превращается в преимущество.</p>
+<h2 id="--">Общая схема работы</h2>
+<p>Исходя из задач и сложностей, описанных выше, родилась следующая схема организации работы над сайтом.</p>
+<p><img src="https://klimchuk.s3.eu-central-1.amazonaws.com/notes/2019/static-blog-automation-hugo-circle-ci/website-automation-schema.svg" alt="Схема орагиназации блога на Hugo с автоматизацией через CircleCI"></p>
+<h3 id="forestry">Forestry</h3>
+<p>Этот сервис выступает в качестве системы управления и редактора для заметок. У него есть возможность настраивать шаблоны и добавлять в них поля для <a href="https://gohugo.io/content-management/front-matter/">front matter</a>, а для содержимого сервис предоставляет удобный <a href="https://ru.wikipedia.org/wiki/WYSIWYG">WYSIWYG-редактор</a>. Одним словом, это графический интерфейс сайта, который все данные берет из git-репозитория и туда же их сохраняет в виде комитов после сохранения. Я опишу, как я использую этот сервис, в отдельной заметке.</p>
+<h3 id="--1">Тема и оформление</h3>
+<p><a href="https://github.com/Alroniks/hugo-theme-klimchuk">Theme</a> — это отдельный репозиторий с оформлением сайта. Я вынес оформление в отдельный репозиторий, чтобы не смешивать историю изменений кода и содержимого. К тому же, выполнив определенные условия по оформлению, эту тему в последствии можно опубликовать в <a href="https://themes.gohugo.io/">публичном каталоге тем для Hugo</a>.</p>
+<p>Этот репозиторий подключается к основному как <a href="https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">подмодуль</a>. Это важно, так как упрощает в последствии конфигурацию процесса сборки. В основном репозитории он описывается в файле <a href="https://github.com/Alroniks/source-klimchuk/blob/master/.gitmodules">.gitmodules</a> в таком формате:</p>
+<pre><code>[submodule &quot;themes/klimchuk&quot;]
+    path = themes/klimchuk
+    url = git@github.com:Alroniks/hugo-theme-klimchuk.git
+</code></pre>
+<h3 id="---">Исходный код и содержимое</h3>
+<p>На схеме Source. Это основной репозиторий сайта, где хранится содержимое сайта: заметки блога, описания мест, где был, проекты и другие страницы. На изменения именно в этом репозитории реагирует <a href="https://circleci.com/">CircleCI</a> и запускает сборку сайта.</p>
+<p>После сборки сайт публикуется в отдельные репозитории на GitHub, где уже настроены GitHub Pages со своими доменами каждый.</p>
+<h2 id="-circleci">Настройка CircleCI</h2>
+<p>CircleCI для работы предлагает две основные сущности: workflows и jobs. Вся работа происходит в задачах (jobs), а процесс (workflow) же описывает то, в каком порядке будут выполняться задачи, причем можно указывать зависимости между задачами.</p>
+<p>Обработка самих задач происходит в Docker-контейнерах. Преимущество такого подхода в том, что уже существует множество Docker-образов (images), которые можно использовать, а если не нашлось, то такой образ можно сделать самому.</p>
+<p>Вся конфигурация для CircleCI описывается в одном файле в формате YML, который должен быть размещен в репозитории по адресу <code>cirleci/config.yml</code>.</p>
+<p>Самая базовая конфигурация выглядит вот так:</p>
+<pre><code class="language-ylm" data-lang="ylm">version: 2
+
+workflows:        # описание рабочих процессов
+  version: 2
+  deployment:     # название процесса
+  	jobs:         # список задач, запускаемых в рамках процесса
+      - build 
+
+jobs:              # описание самих задач непосредственно
+  compilation:
+    docker:        # описывается конфигурация для Docker, какой образ использовать и прочие параметры
+      - image: cibuilds/hugo:latest
+    steps:         # команды, которые будут запущены в рамках этой задачи
+      - checkout   # команда, которая помещает в задачу исходники из репозитория, обязательная
+      - run: echo 'running'  # произвольная команда
+</code></pre><p>Я намеренно не поясняю в деталях, как добавить CircleCI к вашему репозиторию, потому что с этим прекрасно справляется <a href="https://circleci.com/docs/2.0/getting-started/#section=getting-started">документация</a>.</p>
+<h3 id="heading">Задачи</h3>
+<p>В моем случае, у меня используется два типа задач. Первый тип — это компиляция сайта и его базовая проверка с помощью <a href="https://github.com/gjtorikian/html-proofer">htmlproofer</a>. Второй тип — публикация. Задача публикации зависит от задачи компиляции, что означает, что если компиляция не удалась, то ничего не будет опубликовано.</p>
+<h4 id="-compilation">Задача compilation</h4>
+<p>Для задачи компиляции я использую уже готовый Docker-образ <code>cibuilds/hugo:latest</code>.</p>
+<blockquote>
+<p>В классической теории CI/CD использовать тег <code>latest</code> считается плохой практикой, так как обновление версии может внести несовместимые изменения и сборка окажется сломанной.</p>
+</blockquote>
+<p>Я намеренно использую latest-версию, чтобы отслеживать изменения в движке Hugo и адаптировать свой сайт под эти изменений. В случае проблем сборка не случится и я получу уведомление и смогу это исправить. Но если для вас важнее обеспечить регулярность публикации, лучше использовать теги с указанием конкретных версий.</p>
+<p>Теперь я расскажу про шаги, которые выполняются в рамках этой задачи. Первым делом необходимо установить в контейнере git, чтобы иметь возможность работы с git-модулями. Это делается командой <code>apt-get update &amp;&amp; apt-get install -y git</code>.</p>
+<p>Следующим шагом я забираю код из основного репозитория. Для этого CircleCI предоставляет простую команду <code>checkout</code>. Исходники сайта получены, но сборка невозможна без темы. Тема поставляется в виде git-модуля, а это значит, что в основном репозитории хранится только ссылка на комит из репозитория, указанного в качестве модуля и нужно явно обновить содержимое темы командой <code>git submodule sync &amp;&amp; git submodule update --init</code>.</p>
+<p>Итак, весь код получен, можно собирать сайт и проверять результат. Сборка сайта делается простой командой <code>HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR</code>, где <code>$HUGO_BUILD_DIR</code> — это специальная переменная окружения, объявленная в разделе настроек <code>environment</code> самой задачи и указывает, по какому пути будет храниться результат сборки. Сайт собирается на двух языках, каждый из которых собирается в свой каталог и проверить нужно оба, поэтому следующие два шага — это последовательная проверка русской и английской версий сайта с помощью htmlproofer.</p>
+<p>И в качестве последнего шага используется специальная команда <code>persist_to_workspace</code>, которая сохраняет данные компиляции для передачи в следующую задачу, так как по умолчанию, задачи в CircleCI атомарные и после выполнения полностью убирают за собой.</p>
+<p>Итоговое описание задачи в файле конфигурации выглядит вот так:</p>
+<pre><code>compilation:
+  docker:
+    - image: cibuilds/hugo:latest
+      environment:
+        TZ: &quot;Europe/Minsk&quot;
+  working_directory: ~/hugo
+  environment:
+    HUGO_BUILD_DIR: public
+  steps:
+    - run: apt-get update &amp;&amp; apt-get install -y git
+    - checkout
+    - run:
+        name: Update Theme
+        command: git submodule sync &amp;&amp; git submodule update --init
+    - run:
+        name: Build the site
+        command: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
+    - run:
+        name: Test RU website
+        command: htmlproofer $HUGO_BUILD_DIR/ru --allow-hash-href --check-html --empty-alt-ignore --disable-external --check_favicon --check_opengraph
+    - run:
+        name: Test EN website
+        command: htmlproofer $HUGO_BUILD_DIR/en --allow-hash-href --check-html --empty-alt-ignore --disable-external --check_favicon --check_opengraph
+    - persist_to_workspace:
+        root: /root/hugo/public
+        paths: .
+</code></pre><h4 id="-">Задача публикации</h4>
+<p>Для своего сайта в качестве хостинга я использую GitHub Pages, а это значит, что для публикации содержимого мне достаточно отправить изменения в соответствующий репозиторий. Задача публикации описывает этот процесс.</p>
+<p>Первые шаги такие же, как и в случае компиляции, установить git и загрузить код. Так как Hugo на этом этапе не нужен, я использую базовый образ <code>cibuilds/base</code> для работы.</p>
+<p>Чтобы иметь возможность отправлять изменения из CircleCI в git-репозитории, необходимо добавить SSH-ключ в настройках проекта в CircleCI. Важно, чтобы это был User Key, потому что Deploy Key дает доступ только к репозиторию с исходниками, а задача — публиковать изменения в другие. Кроме того, после создания ключа, в конфигруации нужно явно его указать. Указывается он в виде fingerprint-представления ключа, это значение можно найти как на GitHub, так и в настройках проекта в CircleCI. В конфигурации ключ указывается командой <code>add_ssh_keys</code>.</p>
+<p>В задаче компиляции последним шагом была команда, которая сохраняла результат работы задачи и для публикации нам нужен этот результат. Он загружается командой <code>attach_workspace</code>.</p>
+<p>GitHub Pages для привязки репозитория к домену требует специальный файл CNAME, в котором указывается доменное имя. Так как эти файлы нужны только в репозиториях с GitHub Pages, Hugo эти файлы не генерирует, поэтому нужно их создать перед публикацией. Делается это командой <code>echo &quot;klimchuk.by&quot; &gt; public/ru/CNAME</code></p>
+<p>Сайт скомпилирован и готов к публикации. Дальше можно пойти двумя путями. Простой будет заключаться в том, чтобы внутри каталога с нужной языковой версией инициализировать новый git-репозиторий, указать для него нужный remote-репозиторий и отправить изменения в ветку master с флагом <code>--force</code>. Минусы такого способа более чем очевидны. Не видна история изменений скомпилированного сайта, но более того, сборка происходит каждый раз, безусловно, даже когда на сайте не было изменений. Если менялась какая-либо конфигурация, которая не затрагивает содержимое, тогда скомпилированная версия не будет отличаться от предыдущей и в публикации нет смысла.</p>
+<p>Поэтому стоит использовать более сложный, но правильный вариант. Шаги будут следующие: создать рабочий каталог, клонировать в неё репозиторий с уже опубликованным сайтом, скопировать новую версию сайта из предыдущей задачи, добавить в git изменения, зафиксировать их и отправить в репозиторий.</p>
+<p>В последнем шаге, если нет изменений для комита, задача просто завершится. Для такой проверки можно использовать следующую конструкцию: <code>git diff-index --quiet --cached HEAD -- &amp;&amp; echo &quot;No changes!&quot; &amp;&amp; exit 0 || echo $COMMIT_MESSAGE</code>.</p>
+<p>Полное описание задачи выглядит так:</p>
+<pre><code>russian:
+  docker:
+    - image: cibuilds/base
+  steps:
+    - run: apk update &amp;&amp; apk add git
+    - checkout
+    - add_ssh_keys:
+        fingerprints:
+          - &quot;-:-:-&quot;
+    - attach_workspace:
+        at: public
+    - run:
+        name: Set Up Custom Domain
+        command: echo &quot;klimchuk.by&quot; &gt; public/ru/CNAME
+    - run:
+        name: Create Working Directory
+        command: mkdir publishing
+    - run:
+        name: Clone Resources
+        command: git clone git@github.com:Alroniks/compiled-klimchuk-russian.git --branch master --single-branch publishing
+    - run:
+        name: Copy Compilled Stuff
+        command: /bin/cp -R public/ru/* publishing
+    - run:
+        name: Set Git Config and Add Changes
+        command: |
+          cd publishing
+          git config credential.helper 'cache --timeout=120'
+          git config user.email &quot;ci@klimchuk.com&quot;
+          git config user.name &quot;CircleCI Deployment Bot&quot;
+          git add --all
+    - run:
+        name: Commit
+        command: |
+          cd publishing
+          COMMIT_MESSAGE=&quot;Update pages on $(date +'%Y-%m-%d %H:%M:%S')&quot;
+          git diff-index --quiet --cached HEAD -- &amp;&amp; echo &quot;No changes!&quot; &amp;&amp; exit 0 || echo $COMMIT_MESSAGE
+          git commit -m &quot;${COMMIT_MESSAGE}&quot;
+          git push git@github.com:Alroniks/compiled-klimchuk-russian.git master
+</code></pre>
+<p>Для английского языка задача описывается аналогично, меняется только адрес репозитория назначения и доменное имя.</p>
+<h3 id="heading1">Процессы</h3>
+<p>Процессы позволяют описать логику и последовательность выполнения задач по развертыванию и сборке в рамках CI/CD. Это может быть удобно, если для разных событий в репозитории требуются различные сценарии сборки. Например, если был создан релиз, тогда запускается сборка артефактов и сборка приложения с его дальнейшей публикацией, а если это был новый pull request, то нужно запустить тесты.</p>
+<p>Я использую два процесса, один для обычного развертывания, который реагирует на каждый комит в ветку master, а другой для автоматической публикации заметок, который запускается по расписанию.</p>
+<h4 id="heading2">Развертывание</h4>
+<p>Процесс развертывания описывается обычным упоминание задач, которые нужно запустить. Задачи публикации зависят от задачи компиляции и реагируют на изменения в ветке master. В конфигурации это выглядит вот так:</p>
+<pre><code>deployment:
+  jobs:
+    - english:
+        requires:
+          - compilation
+        filters:
+          branches:
+            only: master
+    - russian:
+        requires:
+          - compilation
+        filters:
+          branches:
+            only: master
+    - compilation
+</code></pre>
+<p>Зависимость указывается с помощью параметра <code>requires</code>, в котором указываются задачи, завершения которых нужно дождаться.</p>
+<h4 id="-1">Отложенная публикация</h4>
+<p>Очень приятным открытием стал тот факт, что CircleCI поддерживает запуск процесса CI/CD по расписанию. В случае блога, это очень полезная возможность, так как позволяет настроить автоматическую публикацию заметок. Работает это просто, у заметки датой публикации указывается дата в будущем, сам сайт генерируется раз в сутки в определенное время и заметки, дата публикации которых настала, автоматически появляются на сайте.</p>
+<p>В CircleCI это настраивается достаточно просто путем указания расписания сборок в cronjob-формате. Но важно помнить, что интервалы вида <code>*/10</code> не поддерживаются.</p>
+<p>В конфигурации такой процесс отличается тем, что дополнительно описывается секция triggers, где настраивается расписание. Так как тригеры описаны для всего процесса, в списке задач не нужно указывать фильтры для веток. Из недостатков, сборка всегда происходит по времени в зоне UTC.</p>
+<pre><code>autopublish:
+  triggers:
+    - schedule:
+        cron: &quot;30 6 * * *&quot; # every day at 6:30 am by UTC
+        filters:
+          branches:
+            only:
+              - master
+  jobs:
+    - english:
+        requires:
+          - compilation
+    - russian:
+        requires:
+          - compilation
+    - compilation
+</code></pre>
+<p>Все задачи в рамках одного процесса выполняются параллельно, что значительно может ускорить весь процесс сборки и публикации. Так выглядит успешно завершенный процесс в интерфейсе CircleCI:</p>
+<p><img src="https://klimchuk.s3.eu-central-1.amazonaws.com/notes/2019/static-blog-automation-hugo-circle-ci/circleci-workflow.png" alt="Рабочий процесс в CircleCI"></p>
+<p>В результате всех выше описанных манипуляций мы получаем статический сайт, генерируемый Hugo, который умеет сам собираться и публиковаться. Стоимость такого решения — бесплатно. Автору остается только писать качественный контент.</p>
+<p><a href="https://github.com/Alroniks/source-klimchuk/blob/master/.circleci/config.yml">Полная рабочая конфигурация этого сайта</a> доступна в репозитории на GitHub.</p>
+
+                </div>
+                <div class="tags">
+                    
+                        
+                        
+                            <a class="tag is-info" href="https://klimchuk.by/categories/development/">Разработка</a>
+                        
+                    
+                    <span class="tag">reading 9 min</span>
+                    <span class="tag">слов 1895</span>
+                </div>
+
+                <aside class="menu under-post-navigation">
+                    <ul class="menu-list is-flex is-mobile-columns">
+                        
+                        <li><a href="https://klimchuk.by/notes/blog-reincarnation/">&larr; Реинкарнация сайта</a></li>
+                        
+                        
+                    </ul>
+                </aside>
+            </article>
+        </div>
+        <div class="column is-1 is-hidden-mobile"></div>
+        <div class="column is-3">
+            <aside class="menu">
+
+                <div class="toc is-hidden-mobile">
+                
+                    
+                        <h3 class="menu-label is-size-6">Быстрая навигация</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#--">Общая схема работы</a>
+      <ul>
+        <li><a href="#forestry">Forestry</a></li>
+        <li><a href="#--1">Тема и оформление</a></li>
+        <li><a href="#---">Исходный код и содержимое</a></li>
+      </ul>
+    </li>
+    <li><a href="#-circleci">Настройка CircleCI</a>
+      <ul>
+        <li><a href="#heading">Задачи</a></li>
+        <li><a href="#heading1">Процессы</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                    
+                
+                </div>
+
+                
+
+                
+                    <h3 class="menu-label is-size-6">Похожие заметки</h3>
+                    <ul class="menu-list">
+                        
+                            <li><a href="/notes/wrong-tools-and-procrastination/">Неправильные инструменты и прокрастинация</a></li>
+                        
+                            <li><a href="/notes/modx-cooking-recipes/">Рецепты приготовления MODX</a></li>
+                        
+                            <li><a href="/notes/new-blog-engine/">Новый блоговый движок</a></li>
+                        
+                            <li><a href="/notes/css-naked-day/">CSS Naked Day</a></li>
+                        
+                            <li><a href="/notes/changes-are-coming/">Изменения грядут!</a></li>
+                        
+                            <li><a href="/notes/ubuntu-and-asus-eee-pc/">Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</a></li>
+                        
+                            <li><a href="/notes/new-on-the-site/">Новое на сайте</a></li>
+                        
+                            <li><a href="/notes/site-version-for-netbooks/">Версия сайта для нетбуков</a></li>
+                        
+                            <li><a href="/notes/mobile-version/">Мобильная версия сайта</a></li>
+                        
+                            <li><a href="/notes/comment-in-the-blog/">Комментарии к блогу</a></li>
+                        
+                    </ul>
+                
+            </aside>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item copy">&copy; 2010 — 2019.</div>
+            </div>
+            <div class="level-right">
+                <div class="content">
+                    <a class="button is-small is-light is-rounded" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" title="Лицензия">CC BY-NC-SA 4.0</a>
+                    <a class="button is-small is-info is-rounded" href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a>
+                    <a class="button is-small is-dark is-rounded" target="_blank" href="https://github.com/Alroniks">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -6,10 +6,20 @@
     <description>Recent content on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Fri, 29 Nov 2019 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Dec 2019 06:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Автоматизация блога на Hugo с помощью CircleCI</title>
+      <link>https://klimchuk.by/notes/static-blog-automation-hugo-circle-ci/</link>
+      <pubDate>Wed, 11 Dec 2019 06:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/notes/static-blog-automation-hugo-circle-ci/</guid>
+      <description>В прошлой заметке &amp;ldquo;Реинкарнация сайта&amp;rdquo; я рассказывал, как сейчас устроен мой сайт, но давайте все же углубимся в детали и я подробно расскажу, как можно автоматизировать процесс публикации заметок в блоге, когда у вас статический сайт.
+На первый взгляд статический сайт выглядит идеальным решением, потому как собирается относительно быстро, собой представляет набор файлов и не требователен к хостингу.</description>
+    </item>
     
     <item>
       <title>Реинкарнация сайта</title>
