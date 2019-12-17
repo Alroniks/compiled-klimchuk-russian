@@ -6,10 +6,19 @@
     <description>Recent content on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Wed, 11 Dec 2019 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2019 06:00:11 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>31 y.o.</title>
+      <link>https://klimchuk.by/notes/31yo/</link>
+      <pubDate>Tue, 17 Dec 2019 06:00:11 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/notes/31yo/</guid>
+      <description>Обычно к концу года принято подводить итоги, мол, что успел сделать, чего достиг, чему научился. То же самое, бывает, делают и в день рождения. Так получилось, что я родился в конце года и мне должно быть проще, сразу все итоги подвел, как я это сделал в 2014, и свободен.</description>
+    </item>
     
     <item>
       <title>Автоматизация блога на Hugo с помощью CircleCI</title>
