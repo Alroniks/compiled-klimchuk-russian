@@ -42,8 +42,6 @@
 
 <link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
 
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $(document).ready(function() {
@@ -198,7 +196,7 @@
 <p>Однако вестибулярный аппарат очень страдает от непонимания происходящего, когда гуляешь по дому внутри. Носившимся там школьникам после пары минут было в самом деле очень плохо. :)</p>
 <p>Подводя итог, скажу, что относительно впечатлений, было скучновато. Активности есть, но видимо еще не сезон, поэтому все пока как весной – только распускается.</p>
 <p>А уже на выходе заметили такую интересную инсталляцию с обозначением места для курения.</p>
-<p><img src="https://klimchuk.s3.eu-central-1.amazonaws.com/places/2019/04/dukora/4.jpg" alt="Перевернутый дом в Дукоре"></p>
+<p><img src="https://klimchuk.s3.eu-central-1.amazonaws.com/places/2019/04/dukora/4.jpg" alt="Барельеф &ldquo;Курильщик&rdquo; в месте для курения в Дукоре"></p>
 </div>
             </article>
         </div>
@@ -260,6 +258,37 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+    function wrapImageByFigure(el, wrapper) {
+        wrapper.setAttribute('class', 'is-marginless');
+        el.parentNode.insertBefore(wrapper, el);
+        wrapper.appendChild(el);
+
+        const title = el.getAttribute('title');
+        const alt = el.getAttribute('alt');
+        const caption = title ? title : alt;
+
+        if (caption) {
+            let figcaption = document.createElement('figcaption');
+            let p = document.createElement('p');
+            p.textContent = caption;
+            figcaption.appendChild(p);
+            wrapper.appendChild(figcaption);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const contentImagesSelector = 'article.place .content img';
+        const allImages = document.querySelectorAll(contentImagesSelector);
+
+        for (let i = 0; i < allImages.length; i++) {
+            wrapImageByFigure(allImages[i], document.createElement('figure'));
+        }
+    });
+</script>
+
 
 </body>
 </html>
