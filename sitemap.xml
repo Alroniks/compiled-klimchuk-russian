@@ -618,6 +618,12 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/countries/kazakhstan/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/countries/latvia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
