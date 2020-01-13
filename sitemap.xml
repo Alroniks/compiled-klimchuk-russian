@@ -298,23 +298,6 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/categories/modx/</loc>
-    <lastmod>2011-09-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/categories/modx/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/categories/modx/"
-                />
-  </url>
-  
-  <url>
     <loc>https://klimchuk.by/notes/modx-cooking-recipes/</loc>
     <lastmod>2011-09-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -493,20 +476,10 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/categories/trips/</loc>
+    <loc>https://klimchuk.by/categories/other/</loc>
     <lastmod>2010-07-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/categories/trips/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/categories/trips/"
-                />
   </url>
   
   <url>
