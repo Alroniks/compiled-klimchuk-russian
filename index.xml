@@ -6,10 +6,19 @@
     <description>Recent content on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Tue, 17 Dec 2019 06:00:11 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2020 06:00:55 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Улучшаем редактор заметок в Forestry</title>
+      <link>https://klimchuk.by/notes/forestry-editor-improvements/</link>
+      <pubDate>Tue, 14 Jan 2020 06:00:55 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/notes/forestry-editor-improvements/</guid>
+      <description>Я уже писал, что использую генератор статических сайтов, а в качестве CMS — сервис Forestry. Сервис позволяет писать тексты в удобном редакторе через браузер, прямо как в WordPress, а потом самостоятельно отправляет изменения в git-репозиторий на GitHub, где всю остальную работу по публикации сайта делает CircleCI.</description>
+    </item>
     
     <item>
       <title>31 y. o.</title>

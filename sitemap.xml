@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://klimchuk.by/</loc>
-    <lastmod>2019-12-17T06:00:11+00:00</lastmod>
+    <lastmod>2020-01-14T06:00:55+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -17,6 +17,47 @@
                 hreflang="ru"
                 href="https://klimchuk.by/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/notes/</loc>
+    <lastmod>2020-01-14T06:00:55+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/notes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/development/</loc>
+    <lastmod>2020-01-14T06:00:55+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/development/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/notes/forestry-editor-improvements/</loc>
+    <lastmod>2020-01-14T06:00:55+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -44,44 +85,10 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/notes/</loc>
-    <lastmod>2019-12-17T06:00:11+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/notes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/notes/"
-                />
-  </url>
-  
-  <url>
     <loc>https://klimchuk.by/notes/static-blog-automation-hugo-circle-ci/</loc>
     <lastmod>2019-12-11T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/categories/development/</loc>
-    <lastmod>2019-12-11T06:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/categories/development/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/categories/development/"
-                />
   </url>
   
   <url>
