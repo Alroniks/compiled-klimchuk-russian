@@ -586,6 +586,22 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/donate/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/donate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/donate/"
+                />
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/countries/egypt/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
