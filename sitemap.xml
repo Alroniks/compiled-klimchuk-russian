@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://klimchuk.by/</loc>
-    <lastmod>2020-01-14T06:00:55+00:00</lastmod>
+    <lastmod>2020-01-23T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -21,7 +21,7 @@
   
   <url>
     <loc>https://klimchuk.by/notes/</loc>
-    <lastmod>2020-01-14T06:00:55+00:00</lastmod>
+    <lastmod>2020-01-23T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -34,6 +34,30 @@
                 hreflang="ru"
                 href="https://klimchuk.by/notes/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/opinion/</loc>
+    <lastmod>2020-01-23T06:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/categories/opinion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/categories/opinion/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/notes/wrong-tools-and-procrastination/</loc>
+    <lastmod>2020-01-23T06:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -227,30 +251,6 @@
   <url>
     <loc>https://klimchuk.by/notes/results-and-facts-2014/</loc>
     <lastmod>2014-12-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/categories/opinion/</loc>
-    <lastmod>2014-03-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/categories/opinion/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/categories/opinion/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/notes/wrong-tools-and-procrastination/</loc>
-    <lastmod>2014-03-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

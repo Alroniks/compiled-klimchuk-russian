@@ -6,10 +6,20 @@
     <description>Recent content in Заметки on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Tue, 14 Jan 2020 06:00:55 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 06:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/notes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Неправильные инструменты и прокрастинация</title>
+      <link>https://klimchuk.by/notes/wrong-tools-and-procrastination/</link>
+      <pubDate>Thu, 23 Jan 2020 06:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/notes/wrong-tools-and-procrastination/</guid>
+      <description>Эту заметку я уже публиковал в 2014 году, но решил ее немного отредактировать и опубликовать в новой редакции, так как актуальности она не потеряла.
+ Во время чтения книги замечательных ребят из 37signals (сейчас Basecamp), почти в самом конце книги я прочитал весьма интересную мысль.</description>
+    </item>
     
     <item>
       <title>Улучшаем редактор заметок в Forestry</title>
@@ -57,16 +67,6 @@
       <description>Подсмотрел формат у Артема Сапегина. Итак, некоторые факты, события и достижения 2014 года:
 — Разобрался с генератором DocPad и создал свой сайт на двух языках именно на нем, попутно заслав парочку пулреквестов в сам DocPad.
 — Оставил теплое место в Onliner.</description>
-    </item>
-    
-    <item>
-      <title>Неправильные инструменты и прокрастинация</title>
-      <link>https://klimchuk.by/notes/wrong-tools-and-procrastination/</link>
-      <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://klimchuk.by/notes/wrong-tools-and-procrastination/</guid>
-      <description>Эту заметку я уже публиковал в 2014 году, но решил ее немного отредактировать и опубликовать в новой редакции, так как актуальности она не потеряла.
- Во время чтения книги замечательных ребят из 37signals (сейчас Basecamp), почти в самом конце книги я прочитал весьма интересную мысль.</description>
     </item>
     
     <item>
