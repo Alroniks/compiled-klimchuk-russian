@@ -6,7 +6,7 @@
     <description>Recent content in Места on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2019 06:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/places/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Дукора и перевернутый дом</title>
       <link>https://klimchuk.by/places/dukora-2019/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Apr 2019 06:00:00 +0000</pubDate>
       
       <guid>https://klimchuk.by/places/dukora-2019/</guid>
       <description>На выходные решили выбраться куда-нибудь с ребенком и решили съездить в посёлок Дукора, что недалеко от Минска.
@@ -49,6 +49,15 @@
       
       <guid>https://klimchuk.by/places/baranovichi-2010/</guid>
       <description>Просидев весь день в субботу дома и ничего толком не сделав, я пришел к выводу, что трачу время зря. Пока есть возможности и нету обязательств и семьи, нужно тратить время с пользой и решил, что нужно все таки куда-нибудь съездить. Выбор пал на город Барановичи.</description>
+    </item>
+    
+    <item>
+      <title>2020</title>
+      <link>https://klimchuk.by/places/2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/2020/</guid>
+      <description></description>
     </item>
     
   </channel>

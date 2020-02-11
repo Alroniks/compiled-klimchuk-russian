@@ -150,32 +150,25 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/countries/belarus/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <loc>https://klimchuk.by/places/dukora-2019/</loc>
+    <lastmod>2019-04-13T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://klimchuk.com/countries/belarus/"
+                href="https://klimchuk.com/places/dukora-2019/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://klimchuk.by/countries/belarus/"
+                href="https://klimchuk.by/places/dukora-2019/"
                 />
   </url>
   
   <url>
-    <loc>https://klimchuk.by/places/dukora-2019/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://klimchuk.by/places/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-13T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -208,44 +201,10 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/countries/netherlands/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/countries/netherlands/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/countries/netherlands/"
-                />
-  </url>
-  
-  <url>
     <loc>https://klimchuk.by/places/druskininkai-2019/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/countries/lithuania/</loc>
-    <lastmod>2019-03-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/countries/lithuania/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/countries/lithuania/"
-                />
   </url>
   
   <url>
@@ -574,15 +533,105 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/countries/poland/</loc>
+    <loc>https://klimchuk.by/places/years/2010/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/years/2010/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/years/2010/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/years/2016/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/years/2016/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/years/2016/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/years/2019/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/years/2019/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/years/2019/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/2020/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://klimchuk.by/countries/germany/</loc>
+    <loc>https://klimchuk.by/countries/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/countries/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/countries/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/years/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/years/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/years/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/countries/belarus/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/countries/belarus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/countries/belarus/"
+                />
   </url>
   
   <url>
@@ -602,33 +651,35 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/countries/egypt/</loc>
+    <loc>https://klimchuk.by/places/countries/lithuania/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/countries/lithuania/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/countries/lithuania/"
+                />
   </url>
   
   <url>
-    <loc>https://klimchuk.by/countries/spain/</loc>
+    <loc>https://klimchuk.by/places/countries/netherlands/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/countries/kazakhstan/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/countries/latvia/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/countries/luxembourg/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/countries/netherlands/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/countries/netherlands/"
+                />
   </url>
   
   <url>
@@ -639,24 +690,6 @@
   
   <url>
     <loc>https://klimchuk.by/categories/psychology/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/countries/usa/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/countries/ukraine/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/countries/estonia/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

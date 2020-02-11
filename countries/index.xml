@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Countries on Иван Климчук</title>
+    <link>https://klimchuk.by/countries/</link>
+    <description>Recent content in Countries on Иван Климчук</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-BY</language>
+    
+	<atom:link href="https://klimchuk.by/countries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Беларусь</title>
+      <link>https://klimchuk.by/places/countries/belarus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/countries/belarus/</guid>
+      <description> минск брест гродно гомель витебск орша полоцк могилев Лунинец Пинск Заславль  </description>
+    </item>
+    
+    <item>
+      <title>Литва</title>
+      <link>https://klimchuk.by/places/countries/lithuania/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/countries/lithuania/</guid>
+      <description> вильнюс паланга клайпеда Шауляй - гора крестов  </description>
+    </item>
+    
+    <item>
+      <title>Нидерланды</title>
+      <link>https://klimchuk.by/places/countries/netherlands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/countries/netherlands/</guid>
+      <description> амстер - 2 утрехт  </description>
+    </item>
+    
+  </channel>
+</rss>
