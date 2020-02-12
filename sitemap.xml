@@ -575,6 +575,12 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/places/years/2017/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/places/years/2019/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
