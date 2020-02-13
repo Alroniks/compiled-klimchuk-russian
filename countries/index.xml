@@ -37,5 +37,14 @@
       <description> амстер - 2 утрехт  </description>
     </item>
     
+    <item>
+      <title>Украина</title>
+      <link>https://klimchuk.by/places/countries/ukraine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/places/countries/ukraine/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
