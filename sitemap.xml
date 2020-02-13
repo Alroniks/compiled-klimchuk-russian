@@ -85,13 +85,6 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/notes/31yo/</loc>
-    <lastmod>2019-12-17T06:00:11+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://klimchuk.by/categories/life/</loc>
     <lastmod>2019-12-17T06:00:11+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -106,6 +99,13 @@
                 hreflang="ru"
                 href="https://klimchuk.by/categories/life/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/notes/31yo/</loc>
+    <lastmod>2019-12-17T06:00:11+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
