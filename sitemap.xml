@@ -150,6 +150,30 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/places/</loc>
+    <lastmod>2019-10-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/places/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/places/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/places/gomel-2019/</loc>
+    <lastmod>2019-10-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/places/dukora-2019/</loc>
     <lastmod>2019-04-13T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -163,23 +187,6 @@
                 rel="alternate"
                 hreflang="ru"
                 href="https://klimchuk.by/places/dukora-2019/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/places/</loc>
-    <lastmod>2019-04-13T06:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/places/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/places/"
                 />
   </url>
   
