@@ -652,6 +652,12 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/places/countries/germany/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/donate/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
