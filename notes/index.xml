@@ -6,10 +6,19 @@
     <description>Recent content in Заметки on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Thu, 23 Jan 2020 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 06:00:19 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/notes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Комментариев на сайте не будет</title>
+      <link>https://klimchuk.by/notes/no-comments/</link>
+      <pubDate>Mon, 17 Feb 2020 06:00:19 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/notes/no-comments/</guid>
+      <description>Однажды, работая над улучшениями своего сайта, я озаботился тем фактом, что на сайте нет комментариев. Для технических статей комментарии очень важный элемент, с помощью комментариев можно уточнить или дополнить какую-то информацию из заметки, и как показывает опыт того же Хабра, случается, что комментарии становятся ценнее замой заметки.</description>
+    </item>
     
     <item>
       <title>Неправильные инструменты и прокрастинация</title>
