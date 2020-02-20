@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru-BY" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# fb: http://ogp.me/ns/fb#">
+<head>
+  
+    <title>Как я делал переключатели языков в MODX 3 – Заметки | Иван Климчук</title>
+  
+
+  <meta name="generator" content="Hugo 0.64.1" />
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом">
+
+
+
+
+<link rel="canonical" href="https://klimchuk.by/notes/language-switcher-in-modx-3/">
+
+<meta name="author" content="Ivan Klimchuk <ivan@klimchuk.com>">
+
+<link rel="alternate" type="application/rss+xml" title="Иван Климчук. Заметки" href="https://klimchuk.by/index.xml">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+<link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        
+        $(".navbar-burger").click(function() {
+            
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+        });
+    });
+</script>
+
+
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(53330836, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/53330836" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+
+<meta name="yandex-verification" content="97cfe04c3aabe4cd" />
+
+
+<meta name="yandex-verification" content="ab43473b398804d8" />
+
+
+  
+    <meta property="article:author" content="Иван Климчук">
+    
+        
+        
+            <meta property="article:section" content="Разработка">
+        
+    
+
+    
+        
+        
+        
+        <meta property="og:image" content='http://og-image.alroniks.now.sh/Как%20я%20делал%20переключатели%20языков%20в%20MODX%203.png?theme=light&fontSize=90px'>
+        <meta property="og:image:width" content="2048">
+        <meta property="og:image:height" content="1170">
+
+        <meta name="twitter:image" content="http://og-image.alroniks.now.sh/Как%20я%20делал%20переключатели%20языков%20в%20MODX%203.png?theme=light&fontSize=90px">
+        <meta name="twitter:card" content="summary_large_image">
+    
+
+
+  <meta property="og:title" content="Как я делал переключатели языков в MODX 3" />
+<meta property="og:description" content="Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://klimchuk.by/notes/language-switcher-in-modx-3/" />
+<meta property="article:published_time" content="2020-02-20T06:00:52+00:00" />
+<meta property="article:modified_time" content="2020-02-20T06:00:52+00:00" /><meta property="og:site_name" content="Иван Климчук" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Как я делал переключатели языков в MODX 3"/>
+<meta name="twitter:description" content="Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом"/>
+
+</head>
+<body>
+  <header class="section">
+  <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item is-hidden-desktop" href="/">
+          <strong class="title is-5">Иван Климчук</strong>
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navigation">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navigation" class="navbar-menu">
+        <div class="navbar-start">
+          
+          
+          <a href="https://klimchuk.by/notes" class="navbar-item">
+            <span class="navbar-item-name">Заметки</span>
+          </a>
+          
+          <a href="https://klimchuk.by/places" class="navbar-item">
+            <span class="navbar-item-name">Места</span>
+          </a>
+          
+          <a href="https://klimchuk.by/projects" class="navbar-item">
+            <span class="navbar-item-name">Проекты</span>
+          </a>
+          
+          
+            <a class="navbar-item is-hidden-mobile about-me has-text-grey" href="https://klimchuk.by/">
+              <strong class="title is-6">&xlarr;&nbsp;&nbsp;обо мне</strong>
+            </a>
+          
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item translations">
+            
+              
+                <span>Ru</span>
+              
+            
+              
+            <a href="https://klimchuk.com/"><span>En</span></a>
+              
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <div class="main section">
+      
+<div class="container">
+    <div class="columns is-mobile-columns">
+        <div class="column is-8">
+            <article class="post">
+                <header class="subtitle is-spaced">
+                    <div class="tags above-title">
+                        <a class="tag is-medium is-white is-truncated" href='https://klimchuk.by/notes/'>&larr; Все заметки</a>
+                    </div>
+                    <h1 class="title is-2 is-size-3-mobile is-spaced">Как я делал переключатели языков в MODX 3</h1>
+
+    <div class="subtitle is-3">Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом</div>
+
+<div class="has-text-grey is-mobile-columns">
+    
+    
+
+    
+    
+        <time datetime='02-20-2020 06:00:52'>20 февраля 2020</time>
+    
+</div>
+<br>
+
+
+                </header>
+                <div class="content">
+                    
+
+                    <p>Не воспринимайте эту заметку, как бахвальство, я написал её с целью вдохновить людей, которые подумывали сделать что-то хорошее, но еще не уверены, что их идеи будут достойно восприняты. И еще я хотел показать, что не всегда стоит браться за критически важные задачи, которых все ждут. Иногда можно и нужно работать в собственное удовольствие и делать то, что хочется и получать от процесса энергию на дальнейшую, &ldquo;скучную&rdquo; работу.</p>
+<p>В настоящем программировании редко когда удается сделать что-то, что будет у всех на виду и этим можно будет хвалиться. Интерфейсы рисуют дизайнеры, тексты пишут авторы, а программисты добавляют всему этому капельку &ldquo;магии&rdquo; и заставляют всё вместе работать. Это тоже прекрасно и доставляет удовольствие, но иногда так не хватает возможности сказать: &ldquo;Смотрите, а эту штуку на экране сделал я!&rdquo; и показать результат работы своим друзьям. Примерно с такими мыслями я в свое время решил доделать то, что было начато в третьей версии MODX.</p>
+<p>Ещё в самых начальных попытках делать MODX 3, Вася Наумкин удалил системную настройку <code>manager_language</code>. И не просто удалил, а сделал так, чтобы язык хранился в сессии и его можно было поменять в момент входа в систему. Стало намного удобнее того варианта, когда нужно было менять системную настройку. Нашлись и противники решения, так как пропала возможность заранее настроить доступ пользователям с нужным языком, что тоже довольно весомый аргумент. Куда важнее оказалось то, что пропала возможность вообще переключить язык без выхода из аккаунта. Но так как текущий язык хранится в сессии, ничего не мешает его в этой же сессии и поменять, нужно только дописать механизм такой смены.</p>
+<p>Вторая проблема с языками появилась вместе с новым оформлением процесса установки. В старом виде выпадающий список языков выглядел в целом органично. В новом же, красивом, с шагами, старый неоформленный select выглядел совсем куце и скорее раздражал своим видом, нежели помогал. Решение нашлось не сразу, но было хорошо воспринято сообществом. Новый вид выбора языка обладает своими преимуществами и я далее в заметке о них расскажу, а теперь же вернемся к деталям реализации и посмотрим, как всё делалось поэтапно и какие задачи пришлось решать в процессе.</p>
+<h2 id="переключатель-языка">Переключатель языка</h2>
+<p>Старый список языков на странице входа был крайне избыточен, в нем было 186 языков, тогда как в самом MODX в виде переводов интерфейса доступно только 30, включая основной английский. Первым делом я удалил этот список языков и заменил его на актуальный, <a href="https://github.com/modxcms/revolution/pull/14046/commits/0a1989abbec04290cd363c2864d9b997fa793175">перенеся</a> названия языков в константы класса <code>SecurityLoginManagerController</code>. Конечно же, следом пришлось переписать код для получения и вывода обновленного списка, так как раньше он формировался просто из файла словаря.</p>
+<p>Держать строки, которые могут и должны подлежать переводу, жёстко записанными в коде, крайне плохая практика, поэтому я их перенес в файл словаря, но уже в новом формате. И следом же я добавил новый контроллер, задачей которого стало переключение языка в сессии. Код переключателя довольно примитивный, из параметров запроса он получает язык, на который нужно переключить интерфейс и меняет его в сессии, затем перезагружает страницу.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#999;font-weight:bold;font-style:italic">&lt;?php</span>
+
+<span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">process</span>(<span style="color:#000;font-weight:bold">array</span> <span style="color:#008080">$scriptProperties</span> <span style="color:#000;font-weight:bold">=</span> [])
+{
+    <span style="color:#008080">$targetLanguage</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">$this</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">modx</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">getOption</span>(<span style="color:#d14">&#39;switch&#39;</span>, <span style="color:#008080">$scriptProperties</span>, <span style="color:#d14">&#39;en&#39;</span>);
+
+    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>in_array(<span style="color:#008080">$targetLanguage</span>, <span style="color:#008080">$this</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">modx</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">lexicon</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">getLanguageList</span>())) {
+        <span style="color:#000;font-weight:bold">return</span>;
+    }
+
+    <span style="color:#008080">$_SESSION</span>[<span style="color:#d14">&#39;manager_language&#39;</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">$targetLanguage</span>;
+
+    <span style="color:#008080">$this</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">modx</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">sendRedirect</span>(MODX_MANAGER_URL);
+}
+</code></pre></div><h3 id="выбор-языка-в-интерфейсе">Выбор языка в интерфейсе</h3>
+<p>Для того, чтобы можно было выбрать язык для переключения в интерфейсе, я добавил специальный метод <a href="https://github.com/modxcms/revolution/pull/14046/commits/8a9a61911f1b39d129a80e1091b39952b6483c5f#diff-beeddbdf99549badfa0fdae61172b0b5R80-R105">getLanguageMenu</a> к классу <code>modMenu</code>, который сформировал список языков в главном меню (позже пришлось переместить пункт в меню профиля пользователя). После некоторой возни с оформлением этого списка, а он получился большой, я <a href="https://github.com/modxcms/revolution/pull/14046/commits/aaecd88453f3a72b03d0b8edc08494e8bbe3d99c">добавил разрешение</a>, чтобы иметь возможность ограничить возможность менять язык. Ситуации бывают разные, к тому же MODX славится своей гибкостью, поэтому пришлось соответствовать общепринятым канонам.</p>
+<p>Решение в целом было рабочее, но благодаря ценным советам от других разработчиков, получилось его ещё немного усовершенствовать. Проблема крылась в том, что всё ещё сохранялся жестко записанный список языков в классе <code>modLexicon</code> с оригинальными названиями языков, т.е. когда название языка записано на этом же языке, чтобы можно было легко отыскать знакомые слова. Более того, по задумке название языка так же нужно было переводить на другие языки, чтобы в интерфейсе на русском было написано по-русски &ldquo;Английский язык&rdquo;, для целостности восприятия.</p>
+<h3 id="кеширование-списка-языков">Кеширование списка языков</h3>
+<p>Файлы словарей со списком языков были созданы, но чтобы сформировать список для пользователя, нужно было бы каждый раз при открытии страницы загружать и обрабатывать все 30 файлов, чтобы получить самоназвание языка. Следовательно, нужно было как-то эти списки кешировать. Сами словари и так уже кешируются в MODX, нужно было только добавить новый кэш и положить его в уже существующий каталог <code>lexicon_topics</code>. Код довольно простой, при запросе самоназвания языка вызывается метод <a href="https://github.com/modxcms/revolution/pull/14046/commits/b357099cf279a158fa195c9d88d7426f47fd0c4c#diff-dcbfc153565c0ccc5610813a9c27d605R372-R385">getLanguageNativeName</a>, который читает кэш и если значение в кэше есть, просто его возвращает, если же нет, загружает словарь для запрошенного языка, получает из него значение и сохраняет в кэш. Да, при первой загрузке списка он всё так же перебирает 30 файлов, но как только кэш сформирован, в этом больше нет необходимости.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#999;font-weight:bold;font-style:italic">&lt;?php</span>
+
+<span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">function</span> <span style="color:#900;font-weight:bold">getLanguageNativeName</span>(<span style="color:#008080">$language</span>)
+{
+    <span style="color:#008080">$options</span> <span style="color:#000;font-weight:bold">=</span> [xPDO<span style="color:#000;font-weight:bold">::</span><span style="color:#008080">OPT_CACHE_KEY</span> <span style="color:#000;font-weight:bold">=&gt;</span> self<span style="color:#000;font-weight:bold">::</span><span style="color:#008080">CACHE_DIRECTORY</span>];
+
+    <span style="color:#008080">$names</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">$this</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">modx</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">cacheManager</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">get</span>(self<span style="color:#000;font-weight:bold">::</span><span style="color:#008080">NATIVE_CACHE</span>, <span style="color:#008080">$options</span>) <span style="color:#000;font-weight:bold">?:</span> [];
+
+    <span style="color:#000;font-weight:bold">if</span> (<span style="color:#000;font-weight:bold">!</span>array_key_exists(<span style="color:#008080">$language</span>, <span style="color:#008080">$names</span>)) {
+        <span style="color:#008080">$this</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">modx</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">lexicon</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">load</span>(<span style="color:#d14">&#34;</span><span style="color:#d14">$language</span><span style="color:#d14">:core:languages&#34;</span>);
+        <span style="color:#008080">$names</span>[<span style="color:#008080">$language</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#008080">$this</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">modx</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">lexicon</span>(<span style="color:#d14">&#39;language_&#39;</span> <span style="color:#000;font-weight:bold">.</span> <span style="color:#008080">$language</span>, [], <span style="color:#008080">$language</span>);
+        <span style="color:#008080">$this</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">modx</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">cacheManager</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">set</span>(self<span style="color:#000;font-weight:bold">::</span><span style="color:#008080">NATIVE_CACHE</span>, <span style="color:#008080">$names</span>, <span style="color:#099">0</span>, <span style="color:#008080">$options</span>);
+    }
+
+    <span style="color:#000;font-weight:bold">return</span> <span style="color:#008080">$names</span>[<span style="color:#008080">$language</span>];
+}
+</code></pre></div><p>В итоге получился в меру удобный способ переключить язык интерфейса прямо на лету, где основное название языка представлено в том виде, в котором оно знакомо носителям, но при этом всегда есть перевод на язык интерфейса в данный момент и так же есть код языка в международном формате, если первые два варианта всё ещё вызывают сомнения. Задача была не самой простой, но весьма интересной и надеюсь результат устроит будущих пользователей MODX 3.</p>
+<p><img src="https://klimchuk.s3.eu-central-1.amazonaws.com/notes/2020/language-switcher-in-modx-3/language-switcher-in-modx-3-01.png" alt="Интерфейс переключения языка в MODX 3"></p>
+<p><a href="https://github.com/modxcms/revolution/pull/14046/commits">Полный список изменений</a> можно посмотреть на GitHub. Просто кликайте на нужный комит, чтобы посмотреть, какие изменения были им помечены.</p>
+<h2 id="выбор-языка-при-установке">Выбор языка при установке</h2>
+<p>Дизайн MODX 3, нарисованный в Sterc, достаточно бодро оформили в код и показали рабочий концепт, но вот с экранами установки получилась неувязка и установщик долгое время был старый, как в MODX Revolution. Через некоторое время Ваня Бочкарёв проделал огромную работу по переписыванию установщика в соответствии с макетами. Я подключился позже, после его просьбы помочь с некоторыми моментами по части логики работы установщика.</p>
+<p>С логикой я разобрался, но как я писал в начале заметки, выпадающий список языков меня раздражал и хотелось его как-то исправить. Раздражал он тем, что занимал целый экран, будучи простым выпадающим списком. Переделывать порядок экранов или менять их количество очень не хотелось, код в недрах установщика откровенно говоря воняет.</p>
+<h3 id="концепт-без-списка">Концепт без списка</h3>
+<p>Идея заменить список блоками с названиями языков пришла довольно быстро, после некоторого обсуждения вариантов она и осталась основной, но нужно было переделать сам механизм вывода языков на страницу, проведя значительный <a href="https://github.com/modxcms/revolution/pull/14507/commits/0fda46255af4412c171818bac512e6de9c25dab1">рефакторинг</a>. К тому же хотелось унифицировать вид отображения доступных языков с таким же списком в панели управления, т.е. показывать самоназвание языка, его перевод на текущий выбранный и код на всякий случай. Чтобы этого добиться и оставить имеющуюся форму рабочей, select было решено заменить на radio, но замаскировать это средствами CSS.</p>
+<p>Поиграв немного с размерами блоков, было решено оставить четыре в ряд. Делать размеры блока больше не было смысла, а меньше не позволяла длина строки с названием языка. Но возникла другая проблема, так как доступных языков 30 штук, при условии 4 в ряд, получалось 8 рядов, что крайне много и нужно было с этим что-то делать.</p>
+<h3 id="самые-популярные-языки">Самые популярные языки</h3>
+<p>Было понятно, что нужно как-то ограничить список языков и первая же идея была оставить только самые ходовые, а остальные спрятать и показывать при необходимости. Закономерно возник вопрос, а какие из них считать ходовыми или популярными? Я обратился за помощью к Марку Хамстре и он поделился статистикой своих сервисов (сервис мониторинга сайтов на MODX – SiteDash и магазин дополнений для MODX – modmore), которые собирают эти данные от подключенных сайтов. В русскоязычном сегменте самым популярным языком всегда будет русский, поэтому было важно узнать распределение &ldquo;там&rdquo;. Имея на руках список из семи самых популярных языков я начал писать логику их отображения.</p>
+<p>Система должна определять язык, который установлен в браузере и предлагать этот язык по умолчанию. Так в целом и происходит, но есть нюансы в зависимости от того, входит этот язык в список популярных или находится в списке остальных.</p>
+<p>Если язык не входит в список популярных, то он добавляется в начало этого списка, а сам список затем обрезается до 7 возможных элементов. Список остальных языков формируется методом исключения популярных языков из списка всех языков. В коде это выглядит достаточно просто и наглядно.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#999;font-weight:bold;font-style:italic">&lt;?php</span>
+<span style="color:#008080">$popular</span> <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;en&#39;</span>, <span style="color:#d14">&#39;de&#39;</span>, <span style="color:#d14">&#39;nl&#39;</span>, <span style="color:#d14">&#39;ru&#39;</span>, <span style="color:#d14">&#39;fr&#39;</span>, <span style="color:#d14">&#39;it&#39;</span>, <span style="color:#d14">&#39;es&#39;</span>];
+<span style="color:#008080">$exists</span> <span style="color:#000;font-weight:bold">=</span> array_search(<span style="color:#008080">$current</span>, <span style="color:#008080">$popular</span>, <span style="color:#000;font-weight:bold">true</span>);
+array_unshift(<span style="color:#008080">$popular</span>, <span style="color:#008080">$exists</span> <span style="color:#000;font-weight:bold">?</span> <span style="color:#008080">$popular</span>[<span style="color:#008080">$exists</span>] <span style="color:#000;font-weight:bold">:</span> <span style="color:#008080">$current</span>);
+<span style="color:#008080">$popular</span> <span style="color:#000;font-weight:bold">=</span> array_slice(array_unique(<span style="color:#008080">$popular</span>), <span style="color:#099">0</span>, <span style="color:#099">7</span>);
+
+<span style="color:#998;font-style:italic"># -- some code here
+</span><span style="color:#998;font-style:italic"></span>
+<span style="color:#008080">$parser</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">set</span>(<span style="color:#d14">&#39;popular&#39;</span>, <span style="color:#008080">$popular</span>);
+<span style="color:#008080">$parser</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#008080">set</span>(<span style="color:#d14">&#39;others&#39;</span>, array_diff_key(<span style="color:#008080">$languages</span>, <span style="color:#008080">$popular</span>));
+</code></pre></div><p>Для переключения между режимами &ldquo;Только популярные&rdquo; и &ldquo;Все языки&rdquo; был добавлен простой скрипт на чистом JavaScript, который просто показывает или прячет блоки с остальными языками в зависимости от состояния кнопки. Получилось симпатично на мой взгляд и в меру функционально. Язык по умолчанию выбирается автоматически, языки имеют и самоназвание и перевод, а большие панели-кнопки удобны для выбора на телефоне, если вдруг такая необходимость возникнет.</p>
+<p><img src="https://klimchuk.s3.eu-central-1.amazonaws.com/notes/2020/language-switcher-in-modx-3/language-switcher-in-modx-3-02.png" alt="Выбор языка из популярных в установщике MODX 3"></p>
+<p><img src="https://klimchuk.s3.eu-central-1.amazonaws.com/notes/2020/language-switcher-in-modx-3/language-switcher-in-modx-3-03.png" alt="Список всех языков в установщике MODX 3"></p>
+<p>Так как эта работа была сделана в рамках всего редизайна установщика, своего запроса на изменения у неё нет, но <a href="https://github.com/modxcms/revolution/pull/14507/commits">отдельные комиты</a> можно посмотреть.</p>
+<h2 id="постскриптум">Постскриптум</h2>
+<p>Задачи, описанные в заметке, на вид достаточно просты, но некоторые решения не были очевидны при первом подходе. Может показаться, что в комитах довольно простой код, но комиты отражают лишь зафиксированный итог, они не показывают, какое количество экспериментального кода было написано в процессе. Эту сложность тяжело показать постфактум, однако видимый результат нивелирует этот недостаток.</p>
+<p>Нововведения, предложенные мной, казались спорными для других и это в целом нормально, так как люди разные и у них разный пользовательский и профессиональный опыт, но залогом успеха всегда было и остается общение. Благодаря комментариям к коду я добавил кеширование, чем улучшил производительность в списках с языками. Благодаря отзывам на раннем этапе, когда был готов только простой концепт списка языков на экране установки, удалось сделать подходящее решение практически с первого раза.</p>
+<p>В итоге, соединив желание улучшить продукт и оставить видимый результат работы, путем общения я отстоял свои идеи, что привело к тому, что мой код принят и работает в MODX 3.</p>
+<p>Мне очень хочется надеятся, что эта заметка сможет вдохновить вас и победит ваши сомнения в собственных силах. Делать мир вокруг лучше не сложно и очень приятно.</p>
+
+                </div>
+                <div class="tags">
+                    
+                        
+                        
+                            <a class="tag is-info" href="https://klimchuk.by/categories/development/">Разработка</a>
+                        
+                    
+                    <span class="tag">reading 8 min</span>
+                    <span class="tag">слов 1636</span>
+                </div>
+
+                <aside class="menu under-post-navigation">
+                    <ul class="menu-list is-flex is-mobile-columns">
+                        
+                        <li><a href="https://klimchuk.by/notes/no-comments/">&larr; Комментариев на сайте не будет</a></li>
+                        
+                        
+                    </ul>
+                </aside>
+
+                
+                    <br>
+<div class="message is-warning is-size-6">
+    <div class="message-body">
+        <div class="columns is-mobile-columns">
+            <div class="column is-two-third">
+                <div class="title is-size-4">Поблагодарить, отправив деньги</div>
+                <div class="subtitle is-size-5">Подробнее в <a href="/donate">донат-манифесте</a></div>
+                <div class="is-size-7">
+                    <p><strong>Обратите внимание:</strong> Яндекс-кошелек принимает деньги в российских рублях, но за конвертацию заплачу я. Перевод можно сделать с любой банковской карты.</p>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <iframe src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%9D%D0%B0%20%D0%B2%D0%B4%D0%BE%D1%85%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0&default-sum=500&button-text=12&yamoney-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=41001878021446&"
+                        width="200" height="36" frameborder="0" allowtransparency="true" scrolling="no" style="height: 36px; margin-top: 10px;"></iframe>
+                <br><br>
+                <a href="https://www.patreon.com/bePatron?u=4776897" data-patreon-widget-type="become-patron-button">Подписаться на Patreon!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                
+                
+
+
+
+<br>
+<div class="message is-primary is-size-6">
+    <div class="message-body">
+        <div class="title is-size-5">На сайте отключена возможность комментировать</div>
+        <div class="subtitle is-size-6">Это решение я подробно объясняю в заметке <a href="https://klimchuk.by/notes/no-comments/">Комментариев на сайте не будет</a></div>
+        <p>Обсудить заметку можно связавшись со мной любым из предложенным ниже способов.<br/>Я отвечу на ваш вопрос или предложение и опубликую результат нашего обсуждения в заметке.</p>
+        <br>
+        <div class="buttons are-small">
+            <a class="button" target="_blank" href="mailto:ivan@klimchuk.com?subject=Discuss%20the%20%27%d0%9a%d0%b0%d0%ba%20%d1%8f%20%d0%b4%d0%b5%d0%bb%d0%b0%d0%bb%20%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b0%d1%82%d0%b5%d0%bb%d0%b8%20%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2%20%d0%b2%20MODX%203%27&amp;body=Link%20the%20article%20is%20https://klimchuk.by/notes/language-switcher-in-modx-3/">Почта</a>
+            <a class="button" target="_blank" href="https://t.me/alroniks">Телеграм</a>
+            <a class="button" target="_blank" href="https://www.facebook.com/iiklimchuk/">Фейсбук</a>
+        </div>
+    </div>
+</div>
+
+            </article>
+        </div>
+        <div class="column is-1 is-hidden-mobile"></div>
+        <div class="column is-3">
+            <aside class="menu">
+
+                <div class="toc is-hidden-mobile">
+                
+                    
+                        <h3 class="menu-label is-size-6">Быстрая навигация</h3>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#переключатель-языка">Переключатель языка</a>
+      <ul>
+        <li><a href="#выбор-языка-в-интерфейсе">Выбор языка в интерфейсе</a></li>
+        <li><a href="#кеширование-списка-языков">Кеширование списка языков</a></li>
+      </ul>
+    </li>
+    <li><a href="#выбор-языка-при-установке">Выбор языка при установке</a>
+      <ul>
+        <li><a href="#концепт-без-списка">Концепт без списка</a></li>
+        <li><a href="#самые-популярные-языки">Самые популярные языки</a></li>
+      </ul>
+    </li>
+    <li><a href="#постскриптум">Постскриптум</a></li>
+  </ul>
+</nav>
+                    
+                
+                </div>
+
+                
+
+                
+                    <h3 class="menu-label is-size-6">Похожие заметки</h3>
+                    <ul class="menu-list">
+                        
+                            <li><a href="/notes/forestry-editor-improvements/">Улучшаем редактор заметок в Forestry</a></li>
+                        
+                            <li><a href="/notes/static-blog-automation-hugo-circle-ci/">Автоматизация блога на Hugo с помощью CircleCI</a></li>
+                        
+                            <li><a href="/notes/modx-cooking-recipes/">Рецепты приготовления MODX</a></li>
+                        
+                            <li><a href="/notes/new-blog-engine/">Новый блоговый движок</a></li>
+                        
+                            <li><a href="/notes/css-naked-day/">CSS Naked Day</a></li>
+                        
+                            <li><a href="/notes/changes-are-coming/">Изменения грядут!</a></li>
+                        
+                            <li><a href="/notes/ubuntu-and-asus-eee-pc/">Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</a></li>
+                        
+                            <li><a href="/notes/new-on-the-site/">Новое на сайте</a></li>
+                        
+                            <li><a href="/notes/site-version-for-netbooks/">Версия сайта для нетбуков</a></li>
+                        
+                            <li><a href="/notes/mobile-version/">Мобильная версия сайта</a></li>
+                        
+                    </ul>
+                
+            </aside>
+        </div>
+    </div>
+</div>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item copy">&copy; 2010 — 2020.</div>
+                <div class="level-item"><a href="/donate">Поддержать проект</a></div>
+            </div>
+            <div class="level-right">
+                <div class="content">
+                    <a class="button is-small is-light is-rounded" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" title="Лицензия">CC BY-NC-SA 4.0</a>
+                    <a class="button is-small is-info is-rounded" href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a>
+                    <a class="button is-small is-dark is-rounded" target="_blank" href="https://github.com/Alroniks">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
