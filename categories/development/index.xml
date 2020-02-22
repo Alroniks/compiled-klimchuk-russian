@@ -12,6 +12,17 @@
     
     
     <item>
+      <title></title>
+      <link>https://klimchuk.by/</link>
+      <pubDate>Thu, 20 Feb 2020 06:00:52 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/</guid>
+      <description>Иван Климчук, программист
+и просто хороший человек
+Люблю open source, белорусский язык, велосипед и покодить</description>
+    </item>
+    
+    <item>
       <title>Как я делал переключатели языков в MODX 3</title>
       <link>https://klimchuk.by/notes/language-switcher-in-modx-3/</link>
       <pubDate>Thu, 20 Feb 2020 06:00:52 +0000</pubDate>
