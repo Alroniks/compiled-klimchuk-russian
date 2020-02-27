@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="description" content="Заметки о разработке, включая темы по работе, а так же эксперименты и собственные проекты. Как правило заметки с большим количеством технических деталей, не для всех.">
+<meta name="description" content="Заметки о разработке">
 
 
 
@@ -39,6 +39,8 @@
 
 
 <link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -78,14 +80,14 @@
   
 
   <meta property="og:title" content="Разработка" />
-<meta property="og:description" content="Заметки о разработке, включая темы по работе, а так же эксперименты и собственные проекты. Как правило заметки с большим количеством технических деталей, не для всех." />
+<meta property="og:description" content="Заметки о разработке" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://klimchuk.by/categories/development/" />
 <meta property="og:updated_time" content="2020-02-20T06:00:52+00:00" /><meta property="og:site_name" content="Иван Климчук" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Разработка"/>
-<meta name="twitter:description" content="Заметки о разработке, включая темы по работе, а так же эксперименты и собственные проекты. Как правило заметки с большим количеством технических деталей, не для всех."/>
+<meta name="twitter:description" content="Заметки о разработке"/>
 
 </head>
 <body>
@@ -147,219 +149,424 @@
   <div class="main section">
       
 <div class="container">
+    <article class="post">
 
-    <h1 class="title is-1 is-size-2-mobile">Разработка</h1>
-    <h2 class="subtitle is-3 is-size-4-mobile">Заметки о разработке, включая темы по работе, а так же эксперименты и собственные проекты. Как правило заметки с большим количеством технических деталей, не для всех.</h2>
-
-    <div class="tags">
-        <a class="tag is-medium is-white is-truncated" href='https://klimchuk.by/notes/'>&larr; Все заметки</a>
-    </div>
-
-    
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/language-switcher-in-modx-3/">Как я делал переключатели языков в MODX 3</a></h2> –
-            
-                <time class="title is-6">20 февраля 2020</time>
-            
+        <header class="subtitle is-spaced">
+            <div class="breadcrumb above-title is-size-5-desktop is-size-6-mobile">
+                <ul><li><a href='https://klimchuk.by/notes/'>&larr; Все заметки</a></li></ul>
+            </div>
+            <h1 class="title is-2 is-size-3-mobile">Заметки о разработке</h1>
         </header>
 
-        <div class="content">
-            Не воспринимайте эту заметку, как бахвальство, я написал её с целью вдохновить людей, которые подумывали сделать что-то хорошее, но еще не уверены, что их идеи будут достойно восприняты. И еще я хотел показать, что не всегда стоит браться за критически важные задачи, которых все ждут.
+        <div class="subsections">
+            <div class="breadcrumb">
+                <ul>
+                    
+                    
+                        
+                            <li class="">
+                                <a href="https://klimchuk.by/categories/cycling/" title="Велосипедные заметки">Велосипед</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="is-active has-text-weight-semibold">
+                                <a href="https://klimchuk.by/categories/development/" title="Заметки о разработке">Разработка</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="">
+                                <a href="https://klimchuk.by/categories/life/" title="Заметки о событиях в жизни">Жизнь</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="">
+                                <a href="https://klimchuk.by/categories/modx/" title="">modx</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="">
+                                <a href="https://klimchuk.by/categories/opinion/" title="Мои заметки-мысли">Мысли</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="">
+                                <a href="https://klimchuk.by/categories/other/" title="Заметки обо всём">Разное</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="">
+                                <a href="https://klimchuk.by/categories/technology/" title="Технологичные заметки">Технологии</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="">
+                                <a href="https://klimchuk.by/categories/trips/" title="">trips</a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
         </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/forestry-editor-improvements/">Улучшаем редактор заметок в Forestry</a></h2> –
-            
-                <time class="title is-6">14 января 2020</time>
-            
-        </header>
 
+        
+
+        
         <div class="content">
-            Я уже писал, что использую генератор статических сайтов, а в качестве CMS — сервис Forestry. Сервис позволяет писать тексты в удобном редакторе через браузер, прямо как в WordPress, а потом самостоятельно отправляет изменения в git-репозиторий на GitHub, где всю остальную работу по публикации сайта делает CircleCI.
+            <p>Заметки о разработке, включая темы по работе, а так же эксперименты и собственные проекты. Как правило заметки с большим количеством технических деталей, не для всех.</p>
+
+            <hr>
         </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/static-blog-automation-hugo-circle-ci/">Автоматизация блога на Hugo с помощью CircleCI</a></h2> –
-            
-                <time class="title is-6">11 декабря 2019</time>
-            
-        </header>
+        
 
-        <div class="content">
-            В прошлой заметке &ldquo;Реинкарнация сайта&rdquo; я рассказывал, как сейчас устроен мой сайт, но давайте все же углубимся в детали и я подробно расскажу, как можно автоматизировать процесс публикации заметок в блоге, когда у вас статический сайт.
-На первый взгляд статический сайт выглядит идеальным решением, потому как собирается относительно быстро, собой представляет набор файлов и не требователен к хостингу.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/modx-cooking-recipes/">Рецепты приготовления MODX</a></h2> –
+        <section>
             
-                <time class="title is-6">6 сентября 2011</time>
+            <div class="content" data-year='2020'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/language-switcher-in-modx-3/">Как я делал переключатели языков в MODX</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>20 февраля 2020</time></span>,
+                            <span>на чтение требуется 8 минут</span>,
+                            <span>в заметке 1636 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-        </header>
-
-        <div class="content">
-            Выкладываю видео своего выступления. Хоть и с опозданием большим, но для порядку нужно, чтобы оно тут было.
+            <div class="content" data-year='2020'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/forestry-editor-improvements/">Улучшаем редактор заметок в Forestry</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Forestry очень удобный сервис для статических сайтов, но вот редактор заметок у них получился какой-то уж очень спорный и неудобный. Пришлось искать решение, как сделать его лучше и оно нашлось.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>14 января 2020</time></span>,
+                            <span>на чтение требуется 4 минуты</span>,
+                            <span>в заметке 752 слова</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            
+            <div class="content" data-year='2019'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/static-blog-automation-hugo-circle-ci/">Автоматизация блога на Hugo с помощью CircleCI</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Рассказываю, как можно сделать свой сайт на двух языках, сгенерировать его с помощью Hugo, разместить на бесплатном хостинге GitHub Pages и сделать так, чтобы это все происходило автоматически благодаря CircleCI.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>11 декабря 2019</time></span>,
+                            <span>на чтение требуется 9 минут</span>,
+                            <span>в заметке 1896 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            
+            <div class="content" data-year='2011'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/modx-cooking-recipes/">Рецепты приготовления MODX</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Выкладываю видео своего выступления. Хоть и с опозданием большим, но для порядку нужно, чтобы оно тут было.
   Так же ссылка на презентацию (работает в браузере): Рецепты приготовления MODX
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/new-blog-engine/">Новый блоговый движок</a></h2> –
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>6 сентября 2011</time></span>,
+                            <span>на чтение требуется 1 минута</span>,
+                            <span>в заметке 28 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-                <time class="title is-6">13 июля 2011</time>
+            <div class="content" data-year='2011'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/new-blog-engine/">Новый блоговый движок</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Как-то последнее время зрела мысль, чтобы эдакое сотворить с сайтом. В данном виде, как он есть, сайт уже больше года существует. Но он перестал меня удовлетворять. Нужно переделать дизайн, упростить верстку, убрать лишний хлам в виде скрипта, который меняет размеры буковок в зависимости от разрешения.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>13 июля 2011</time></span>,
+                            <span>на чтение требуется 1 минута</span>,
+                            <span>в заметке 213 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-        </header>
-
-        <div class="content">
-            Как-то последнее время зрела мысль, чтобы эдакое сотворить с сайтом. В данном виде, как он есть, сайт уже больше года существует. Но он перестал меня удовлетворять. Нужно переделать дизайн, упростить верстку, убрать лишний хлам в виде скрипта, который меняет размеры буковок в зависимости от разрешения.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/css-naked-day/">CSS Naked Day</a></h2> –
-            
-                <time class="title is-6">9 апреля 2011</time>
-            
-        </header>
-
-        <div class="content">
-            9 апреля во всем мире проводится день без CSS - CSS Naked Day. Web-мастера отключают на своих сайтах весь css и показывают свой сайт голым, т.е. только верстка в html, без какого-либо оформления.
+            <div class="content" data-year='2011'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/css-naked-day/">CSS Naked Day</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            9 апреля во всем мире проводится день без CSS - CSS Naked Day. Web-мастера отключают на своих сайтах весь css и показывают свой сайт голым, т.е. только верстка в html, без какого-либо оформления.
 Скажете, зачем? Особо то может и не зачем, но я вижу в этом большую пользу.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/changes-are-coming/">Изменения грядут!</a></h2> –
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>9 апреля 2011</time></span>,
+                            <span>на чтение требуется 1 минута</span>,
+                            <span>в заметке 74 слова</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-                <time class="title is-6">6 марта 2011</time>
+            <div class="content" data-year='2011'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/changes-are-coming/">Изменения грядут!</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Несмотря на громкий заголовок, заметка будет короткой. В связи с тем, что я все больше увлекаюсь системой контроля версий под название Mercurial, я планирую перенести раздел сайта Проекты на bitbucket.org. Если получится договориться с тех-поддержкой хостинга о том, чтобы мне сменили CNAME для поддомена, то будет вообще шикарно.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>6 марта 2011</time></span>,
+                            <span>на чтение требуется 1 минута</span>,
+                            <span>в заметке 62 слова</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-        </header>
-
-        <div class="content">
-            Несмотря на громкий заголовок, заметка будет короткой. В связи с тем, что я все больше увлекаюсь системой контроля версий под название Mercurial, я планирую перенести раздел сайта Проекты на bitbucket.org. Если получится договориться с тех-поддержкой хостинга о том, чтобы мне сменили CNAME для поддомена, то будет вообще шикарно.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/ubuntu-and-asus-eee-pc/">Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</a></h2> –
+            <div class="content" data-year='2011'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/ubuntu-and-asus-eee-pc/">Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>2 марта 2011</time></span>,
+                            <span>на чтение требуется 2 минуты</span>,
+                            <span>в заметке 217 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-                <time class="title is-6">2 марта 2011</time>
+            <div class="content" data-year='2011'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/new-on-the-site/">Новое на сайте</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Система стоит, нормально работает. Хорошее правило админов: &ldquo;работает - не трогай!&quot;. Но оно применимо для тех вещей, которые настроил и забыл. Но если бы так поступали бы с сайтами, сидели бы мы в 90 годах и по сей день. Поэтому сайт должен быть динамичным, развиваться и совершенствоваться.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>18 февраля 2011</time></span>,
+                            <span>на чтение требуется 3 минуты</span>,
+                            <span>в заметке 428 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-        </header>
-
-        <div class="content">
-            Стояла раньше у меня на нетбуке Ubuntu Netbook Edition. И параллельно ей жила там мной не любимая Windows. Жила, потому что нужно было делать задания по учебе в университете, иначе никак. Но вот учебы нет, для диплома все есть и в линуксах, и решил я навести порядок на нетбуке.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/new-on-the-site/">Новое на сайте</a></h2> –
+            <div class="content" data-year='2010'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/site-version-for-netbooks/">Версия сайта для нетбуков</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Версия сайта для нетбуков Вот ведь какое дело, появились давным-давно первые сайты. Неказистые, ужасные, не всегда красивые. На то были причины: не было html5 и css3, опыта было не так много у разработчиков, браузеры не все могли. Сейчас ситуация поменялась в лучшую сторону и намного в лучшую.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>21 октября 2010</time></span>,
+                            <span>на чтение требуется 3 минуты</span>,
+                            <span>в заметке 617 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-                <time class="title is-6">18 февраля 2011</time>
-            
-        </header>
-
-        <div class="content">
-            Система стоит, нормально работает. Хорошее правило админов: &ldquo;работает - не трогай!&quot;. Но оно применимо для тех вещей, которые настроил и забыл. Но если бы так поступали бы с сайтами, сидели бы мы в 90 годах и по сей день. Поэтому сайт должен быть динамичным, развиваться и совершенствоваться.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/site-version-for-netbooks/">Версия сайта для нетбуков</a></h2> –
-            
-                <time class="title is-6">21 октября 2010</time>
-            
-        </header>
-
-        <div class="content">
-            Версия сайта для нетбуков Вот ведь какое дело, появились давным-давно первые сайты. Неказистые, ужасные, не всегда красивые. На то были причины: не было html5 и css3, опыта было не так много у разработчиков, браузеры не все могли. Сейчас ситуация поменялась в лучшую сторону и намного в лучшую.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/mobile-version/">Мобильная версия сайта</a></h2> –
-            
-                <time class="title is-6">12 сентября 2010</time>
-            
-        </header>
-
-        <div class="content">
-            Посидев пару часиков сегодня вечерком, почитав подборку литературы, посмотрев примеры, сделал себе нормальную мобильную версию сайта. Opera Mobile умеет отображать любой сайт, но хотелось именно той простоты и удобства, которая есть в мобильных версиях других сайтов. Сделал нечто подобное.
+            <div class="content" data-year='2010'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/mobile-version/">Мобильная версия сайта</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Посидев пару часиков сегодня вечерком, почитав подборку литературы, посмотрев примеры, сделал себе нормальную мобильную версию сайта. Opera Mobile умеет отображать любой сайт, но хотелось именно той простоты и удобства, которая есть в мобильных версиях других сайтов. Сделал нечто подобное.
 В мобильной версии где-то могут быть недочеты или мелкие баги, все таки делал ее буквально за пару часов.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/comment-in-the-blog/">Комментарии к блогу</a></h2> –
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>12 сентября 2010</time></span>,
+                            <span>на чтение требуется 1 минута</span>,
+                            <span>в заметке 84 слова</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-                <time class="title is-6">15 июня 2010</time>
-            
-        </header>
-
-        <div class="content">
-            Выходной день выдался удачным и продуктивным, несмотря на такую жаркую погоду. В итоге я завершил работу над функционалом комментариев. Еще, правда, много работы в этом направлении, но это касается скорее административной части сайта.
+            <div class="content" data-year='2010'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/comment-in-the-blog/">Комментарии к блогу</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Выходной день выдался удачным и продуктивным, несмотря на такую жаркую погоду. В итоге я завершил работу над функционалом комментариев. Еще, правда, много работы в этом направлении, но это касается скорее административной части сайта.
 Как комментировать? Учить как пользоваться комментариями не стану, расскажу лишь о том, что нужно для успешного добавления комментария.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/favicon-on-site/">Появился favicon на сайте</a></h2> –
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>15 июня 2010</time></span>,
+                            <span>на чтение требуется 2 минуты</span>,
+                            <span>в заметке 239 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-                <time class="title is-6">14 июня 2010</time>
+            <div class="content" data-year='2010'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/favicon-on-site/">Появился favicon на сайте</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Признаком качественно сайта на данный момент является так же всем известный favicon. Если кто не знает - маленькая иконка в строке браузера, слева от адреса страницы. Кроме того, в различных каталогах, приложениях эти иконки учитываются и показываются. Так что рано или поздно нужно было сделать такую иконку и для своего сайта.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>14 июня 2010</time></span>,
+                            <span>на чтение требуется 2 минуты</span>,
+                            <span>в заметке 277 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-        </header>
-
-        <div class="content">
-            Признаком качественно сайта на данный момент является так же всем известный favicon. Если кто не знает - маленькая иконка в строке браузера, слева от адреса страницы. Кроме того, в различных каталогах, приложениях эти иконки учитываются и показываются. Так что рано или поздно нужно было сделать такую иконку и для своего сайта.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/the-new-site-design/">Новый дизайн сайта</a></h2> –
+            <div class="content" data-year='2010'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/the-new-site-design/">Новый дизайн сайта</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Как вы уже наверное заметили, уважаемые читатели, работа не стоит на месте. Постоянно я что-то делаю и меняю как на сайте, так и в блоге. Сайт родился недавно и это закономерно. Рубрика называется &ldquo;Новости блога&rdquo; и именно в ней я собираюсь рассказывать о новых возможностях и фичах моего сайта и блога.
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>12 июня 2010</time></span>,
+                            <span>на чтение требуется 2 минуты</span>,
+                            <span>в заметке 314 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
             
-                <time class="title is-6">12 июня 2010</time>
-            
-        </header>
-
-        <div class="content">
-            Как вы уже наверное заметили, уважаемые читатели, работа не стоит на месте. Постоянно я что-то делаю и меняю как на сайте, так и в блоге. Сайт родился недавно и это закономерно. Рубрика называется &ldquo;Новости блога&rdquo; и именно в ней я собираюсь рассказывать о новых возможностях и фичах моего сайта и блога.
-        </div>
-    </article>
-    
-    <article class="content">
-        <header>
-            <h2 class="is-inline-block title is-3"><a href="https://klimchuk.by/notes/the-first-blog-entry/">Первая запись блога</a></h2> –
-            
-                <time class="title is-6">20 января 2010</time>
-            
-        </header>
-
-        <div class="content">
-            Доброго времени суток, уважаемые пользователи.
+            <div class="content" data-year='2010'>
+                <article>
+                    <header class="title is-4">
+                        <a href="https://klimchuk.by/notes/the-first-blog-entry/">Первая запись блога</a>
+                    </header>
+                    <div class="is-size-5">
+                        
+                            Доброго времени суток, уважаемые пользователи.
 Этим постом я хочу начать свой блог.
 Для начала хотелось бы рассказать, о чем я хочу писать в свой блог и почему я не пользуюсь уже готовыми сервисами типа ЖЖ и другие. А также рассказать для кого я буду писать, о чем я буду писать и как часто я буду писать в свой блог.
-        </div>
-    </article>
-    
+                        
+                    </div>
+                    <footer class="has-text-grey" style="margin-top: .5rem;">
+                        <div class="is-size-6">
+                            
+                            
+                            <span>Опубликовано <time>20 января 2010</time></span>,
+                            <span>на чтение требуется 3 минуты</span>,
+                            <span>в заметке 538 слов</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            
 
+        </section>
+
+    </article>
 </div>
 
   </div>

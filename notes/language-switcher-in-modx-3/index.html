@@ -2,7 +2,7 @@
 <html lang="ru-BY" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# fb: http://ogp.me/ns/fb#">
 <head>
   
-    <title>Как я делал переключатели языков в MODX 3 – Заметки | Иван Климчук</title>
+    <title>Как я делал переключатели языков в MODX – Заметки | Иван Климчук</title>
   
 
   <meta name="generator" content="Hugo 0.65.3" />
@@ -39,6 +39,8 @@
 
 
 <link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -88,16 +90,16 @@
         
         
         
-        <meta property="og:image" content='http://og-image.alroniks.now.sh/Как%20я%20делал%20переключатели%20языков%20в%20MODX%203.png?theme=light&fontSize=90px'>
+        <meta property="og:image" content='http://og-image.alroniks.now.sh/Как%20я%20делал%20переключатели%20языков%20в%20MODX.png?theme=light&fontSize=90px'>
         <meta property="og:image:width" content="2048">
         <meta property="og:image:height" content="1170">
 
-        <meta name="twitter:image" content="http://og-image.alroniks.now.sh/Как%20я%20делал%20переключатели%20языков%20в%20MODX%203.png?theme=light&fontSize=90px">
+        <meta name="twitter:image" content="http://og-image.alroniks.now.sh/Как%20я%20делал%20переключатели%20языков%20в%20MODX.png?theme=light&fontSize=90px">
         <meta name="twitter:card" content="summary_large_image">
     
 
 
-  <meta property="og:title" content="Как я делал переключатели языков в MODX 3" />
+  <meta property="og:title" content="Как я делал переключатели языков в MODX" />
 <meta property="og:description" content="Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://klimchuk.by/notes/language-switcher-in-modx-3/" />
@@ -105,7 +107,7 @@
 <meta property="article:modified_time" content="2020-02-20T06:00:52+00:00" /><meta property="og:site_name" content="Иван Климчук" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Как я делал переключатели языков в MODX 3"/>
+<meta name="twitter:title" content="Как я делал переключатели языков в MODX"/>
 <meta name="twitter:description" content="Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом"/>
 
 </head>
@@ -172,10 +174,18 @@
         <div class="column is-8">
             <article class="post">
                 <header class="subtitle is-spaced">
-                    <div class="tags above-title">
-                        <a class="tag is-medium is-white is-truncated" href='https://klimchuk.by/notes/'>&larr; Все заметки</a>
+                    <div class="breadcrumb above-title is-size-5-desktop is-size-6-mobile">
+                        <ul>
+                            <li><a href='https://klimchuk.by/notes/'>&larr; Все заметки</a></li>
+                            
+                                
+                                
+                                    <li><a href="https://klimchuk.by/categories/development/">Разработка</a></li>
+                                
+                            
+                        </ul>
                     </div>
-                    <h1 class="title is-2 is-size-3-mobile is-spaced">Как я делал переключатели языков в MODX 3</h1>
+                    <h1 class="title is-2 is-size-3-mobile is-spaced">Как я делал переключатели языков в MODX</h1>
 
     <div class="subtitle is-3">Заметка с примером того, как можно небольшим исправлением улучшить проект с открытым исходным кодом</div>
 
@@ -271,15 +281,9 @@ array_unshift(<span style="color:#008080">$popular</span>, <span style="color:#0
 <p>Мне очень хочется надеятся, что эта заметка сможет вдохновить вас и победит ваши сомнения в собственных силах. Делать мир вокруг лучше не сложно и очень приятно.</p>
 
                 </div>
-                <div class="tags">
-                    
-                        
-                        
-                            <a class="tag is-info" href="https://klimchuk.by/categories/development/">Разработка</a>
-                        
-                    
-                    <span class="tag">reading 8 min</span>
-                    <span class="tag">слов 1636</span>
+                <div class="tags are-medium">
+                    <span class="tag">На чтение понадобилось 8 минут</span>
+                    <span class="tag">В заметке 1636 слов</span>
                 </div>
 
                 <aside class="menu under-post-navigation">
@@ -327,7 +331,7 @@ array_unshift(<span style="color:#008080">$popular</span>, <span style="color:#0
         <p>Обсудить заметку можно связавшись со мной любым из предложенным ниже способов.<br/>Я отвечу на ваш вопрос или предложение и опубликую результат нашего обсуждения в заметке.</p>
         <br>
         <div class="buttons are-small">
-            <a class="button" target="_blank" href="mailto:ivan@klimchuk.com?subject=Discuss%20the%20%27%d0%9a%d0%b0%d0%ba%20%d1%8f%20%d0%b4%d0%b5%d0%bb%d0%b0%d0%bb%20%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b0%d1%82%d0%b5%d0%bb%d0%b8%20%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2%20%d0%b2%20MODX%203%27&amp;body=Link%20the%20article%20is%20https://klimchuk.by/notes/language-switcher-in-modx-3/">Почта</a>
+            <a class="button" target="_blank" href="mailto:ivan@klimchuk.com?subject=Discuss%20the%20%27%d0%9a%d0%b0%d0%ba%20%d1%8f%20%d0%b4%d0%b5%d0%bb%d0%b0%d0%bb%20%d0%bf%d0%b5%d1%80%d0%b5%d0%ba%d0%bb%d1%8e%d1%87%d0%b0%d1%82%d0%b5%d0%bb%d0%b8%20%d1%8f%d0%b7%d1%8b%d0%ba%d0%be%d0%b2%20%d0%b2%20MODX%27&amp;body=Link%20the%20article%20is%20https://klimchuk.by/notes/language-switcher-in-modx-3/">Почта</a>
             <a class="button" target="_blank" href="https://t.me/alroniks">Телеграм</a>
             <a class="button" target="_blank" href="https://www.facebook.com/iiklimchuk/">Фейсбук</a>
         </div>
