@@ -641,38 +641,6 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/categories/modx/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/categories/modx/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/categories/modx/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/categories/trips/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://klimchuk.com/categories/trips/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://klimchuk.by/categories/trips/"
-                />
-  </url>
-  
-  <url>
     <loc>https://klimchuk.by/years/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
