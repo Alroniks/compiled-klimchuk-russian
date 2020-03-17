@@ -10,5 +10,16 @@
 	<atom:link href="https://klimchuk.by/categories/crazyhouse/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>https://klimchuk.by/</link>
+      <pubDate>Thu, 20 Feb 2020 06:00:52 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/</guid>
+      <description>Иван Климчук, программист
+и просто хороший человек
+Люблю open source, белорусский язык, велосипед и покодить</description>
+    </item>
+    
   </channel>
 </rss>
