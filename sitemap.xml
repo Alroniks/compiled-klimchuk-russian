@@ -20,6 +20,13 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/categories/</loc>
+    <lastmod>2020-02-20T06:00:52+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/notes/</loc>
     <lastmod>2020-02-20T06:00:52+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -654,6 +661,12 @@
                 hreflang="ru"
                 href="https://klimchuk.by/years/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/categories/crazyhouse/%D0%B1%D0%B5%D0%B7%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D0%B4%D0%BE%D0%BC/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
