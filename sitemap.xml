@@ -243,6 +243,16 @@
     <lastmod>2014-12-31T06:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/notes/results-and-facts-2014/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/notes/results-and-facts-2014/"
+                />
   </url>
   
   <url>
