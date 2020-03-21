@@ -5,7 +5,7 @@
     <title>Время = Деньги. Экономить? – Заметки | Иван Климчук</title>
   
 
-  <meta name="generator" content="Hugo 0.67.1" />
+  <meta name="generator" content="Hugo 0.68.0" />
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,20 +39,24 @@
 
 
 
-
-
 <link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function() {
-        
-        $(".navbar-burger").click(function() {
-            
-            $(".navbar-burger").toggleClass("is-active");
-            $(".navbar-menu").toggleClass("is-active");
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const $nbBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($nbBurgers.length < 1) {
+            return;
+        }
+        $nbBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
         });
     });
 </script>
@@ -251,9 +255,9 @@
         <p>Обсудить заметку можно связавшись со мной любым из предложенным ниже способов.<br/>Я отвечу на ваш вопрос или предложение и опубликую результат нашего обсуждения в заметке.</p>
         <br>
         <div class="buttons are-small">
-            <a class="button" target="_blank" href="mailto:ivan@klimchuk.com?subject=Discuss%20the%20%27%d0%92%d1%80%d0%b5%d0%bc%d1%8f%20=%20%d0%94%d0%b5%d0%bd%d1%8c%d0%b3%d0%b8.%20%d0%ad%d0%ba%d0%be%d0%bd%d0%be%d0%bc%d0%b8%d1%82%d1%8c?%27&amp;body=Link%20the%20article%20is%20https://klimchuk.by/notes/time-money-save/">Почта</a>
-            <a class="button" target="_blank" href="https://t.me/alroniks">Телеграм</a>
-            <a class="button" target="_blank" href="https://www.facebook.com/iiklimchuk/">Фейсбук</a>
+            <a class="button" target="_blank" rel="noopener" href="mailto:ivan@klimchuk.com?subject=Discuss%20the%20%27%d0%92%d1%80%d0%b5%d0%bc%d1%8f%20=%20%d0%94%d0%b5%d0%bd%d1%8c%d0%b3%d0%b8.%20%d0%ad%d0%ba%d0%be%d0%bd%d0%be%d0%bc%d0%b8%d1%82%d1%8c?%27&amp;body=Link%20the%20article%20is%20https://klimchuk.by/notes/time-money-save/">Почта</a>
+            <a class="button" target="_blank" rel="noopener" href="https://t.me/alroniks">Телеграм</a>
+            <a class="button" target="_blank" rel="noopener" href="https://www.facebook.com/iiklimchuk/">Фейсбук</a>
         </div>
     </div>
 </div>
@@ -327,9 +331,9 @@
             </div>
             <div class="level-right">
                 <div class="content">
-                    <a class="button is-small is-light is-rounded" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" title="Лицензия">CC BY-NC-SA 4.0</a>
+                    <a class="button is-small is-light is-rounded" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" title="Лицензия">CC BY-NC-SA 4.0</a>
                     <a class="button is-small is-info is-rounded" href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a>
-                    <a class="button is-small is-dark is-rounded" target="_blank" href="https://github.com/Alroniks">GitHub</a>
+                    <a class="button is-small is-dark is-rounded" target="_blank" rel="noopener" href="https://github.com/Alroniks">GitHub</a>
                 </div>
             </div>
         </div>
