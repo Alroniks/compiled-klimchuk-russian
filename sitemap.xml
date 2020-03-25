@@ -555,43 +555,7 @@
   </url>
   
   <url>
-    <loc>https://klimchuk.by/projects/brevetby/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/projects/iddmby/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/projects/modcastby/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/projects/modcastsvideo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/projects/modxby/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/projects/namoveby/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/projects/pravilnaby/</loc>
+    <loc>https://klimchuk.by/projects/slackify/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -774,6 +738,16 @@
     <loc>https://klimchuk.by/projects/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://klimchuk.com/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://klimchuk.by/projects/"
+                />
   </url>
   
   <url>
