@@ -61,34 +61,6 @@
     </item>
     
     <item>
-      <title>Новый блоговый движок</title>
-      <link>https://klimchuk.by/notes/new-blog-engine/</link>
-      <pubDate>Wed, 13 Jul 2011 00:00:00 +0000</pubDate>
-      
-      <guid>https://klimchuk.by/notes/new-blog-engine/</guid>
-      <description>Как-то последнее время зрела мысль, чтобы эдакое сотворить с сайтом. В данном виде, как он есть, сайт уже больше года существует. Но он перестал меня удовлетворять. Нужно переделать дизайн, упростить верстку, убрать лишний хлам в виде скрипта, который меняет размеры буковок в зависимости от разрешения.</description>
-    </item>
-    
-    <item>
-      <title>CSS Naked Day</title>
-      <link>https://klimchuk.by/notes/css-naked-day/</link>
-      <pubDate>Sat, 09 Apr 2011 00:00:00 +0000</pubDate>
-      
-      <guid>https://klimchuk.by/notes/css-naked-day/</guid>
-      <description>9 апреля во всем мире проводится день без CSS - CSS Naked Day. Web-мастера отключают на своих сайтах весь css и показывают свой сайт голым, т.е. только верстка в html, без какого-либо оформления.
-Скажете, зачем? Особо то может и не зачем, но я вижу в этом большую пользу.</description>
-    </item>
-    
-    <item>
-      <title>Изменения грядут!</title>
-      <link>https://klimchuk.by/notes/changes-are-coming/</link>
-      <pubDate>Sun, 06 Mar 2011 00:00:00 +0000</pubDate>
-      
-      <guid>https://klimchuk.by/notes/changes-are-coming/</guid>
-      <description>Несмотря на громкий заголовок, заметка будет короткой. В связи с тем, что я все больше увлекаюсь системой контроля версий под название Mercurial, я планирую перенести раздел сайта Проекты на bitbucket.org. Если получится договориться с тех-поддержкой хостинга о том, чтобы мне сменили CNAME для поддомена, то будет вообще шикарно.</description>
-    </item>
-    
-    <item>
       <title>Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</title>
       <link>https://klimchuk.by/notes/ubuntu-and-asus-eee-pc/</link>
       <pubDate>Wed, 02 Mar 2011 00:00:00 +0000</pubDate>
@@ -113,26 +85,6 @@
       
       <guid>https://klimchuk.by/notes/site-version-for-netbooks/</guid>
       <description>Версия сайта для нетбуков Вот ведь какое дело, появились давным-давно первые сайты. Неказистые, ужасные, не всегда красивые. На то были причины: не было html5 и css3, опыта было не так много у разработчиков, браузеры не все могли. Сейчас ситуация поменялась в лучшую сторону и намного в лучшую.</description>
-    </item>
-    
-    <item>
-      <title>Мобильная версия сайта</title>
-      <link>https://klimchuk.by/notes/mobile-version/</link>
-      <pubDate>Sun, 12 Sep 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://klimchuk.by/notes/mobile-version/</guid>
-      <description>Посидев пару часиков сегодня вечерком, почитав подборку литературы, посмотрев примеры, сделал себе нормальную мобильную версию сайта. Opera Mobile умеет отображать любой сайт, но хотелось именно той простоты и удобства, которая есть в мобильных версиях других сайтов. Сделал нечто подобное.
-В мобильной версии где-то могут быть недочеты или мелкие баги, все таки делал ее буквально за пару часов.</description>
-    </item>
-    
-    <item>
-      <title>Комментарии к блогу</title>
-      <link>https://klimchuk.by/notes/comment-in-the-blog/</link>
-      <pubDate>Tue, 15 Jun 2010 00:00:00 +0000</pubDate>
-      
-      <guid>https://klimchuk.by/notes/comment-in-the-blog/</guid>
-      <description>Выходной день выдался удачным и продуктивным, несмотря на такую жаркую погоду. В итоге я завершил работу над функционалом комментариев. Еще, правда, много работы в этом направлении, но это касается скорее административной части сайта.
-Как комментировать? Учить как пользоваться комментариями не стану, расскажу лишь о том, что нужно для успешного добавления комментария.</description>
     </item>
     
     <item>

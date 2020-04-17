@@ -38,7 +38,11 @@
 
 
 
-<link href="https://klimchuk.com/css/theme.css" rel="stylesheet" type="text/css">
+
+    
+
+
+<link href="https://klimchuk.by/css/theme.min.0fabde5176de73c059cd9ee76ac5f986748904c42ba534fb5b4683285d756e60.css" rel="stylesheet" type="text/css">
 
 <script>
     
@@ -82,7 +86,7 @@
 
 
   
-    <meta property="article:author" content="Иван Климчук">
+    <meta property="article:author" content="">
     
         
         
@@ -108,7 +112,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://klimchuk.by/notes/no-comments/" />
 <meta property="article:published_time" content="2020-02-17T06:00:19+00:00" />
-<meta property="article:modified_time" content="2020-02-17T06:00:19+00:00" /><meta property="og:site_name" content="Иван Климчук" />
+<meta property="article:modified_time" content="2020-02-17T06:00:19+00:00" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Комментариев на сайте не будет"/>
@@ -157,32 +161,14 @@
             <span class="navbar-item-name">Проекты</span>
           </a>
           
-          
-          <div class="navbar-item has-dropdown is-hoverable">
-            <span class="navbar-link">
-              <span class="navbar-item-name">Еще</span>
-            </span>
-            <div class="navbar-dropdown">
-              
-                <a href="https://klimchuk.by/donate/" class="navbar-item">
-                  <span class="navbar-item-name is-inner">Донат-манифест</span>
-                </a>
-              
-            </div>
-          </div>
-          
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item translations">
+          <div class="navbar-item">
             
-              
-                <span>Ru</span>
-              
-            
-              
-            <a href="https://klimchuk.com/"><span>En</span></a>
-              
+              <a href="https://klimchuk.by/donate/" class="navbar-item is-size-5 ">
+                <span class="">&nbsp;Донат-манифест</span>
+              </a>
             
           </div>
         </div>
@@ -228,7 +214,7 @@
                     
 
                     <p>Однажды, работая над улучшениями своего сайта, я озаботился тем фактом, что на сайте нет комментариев. Для технических статей комментарии очень важный элемент, с помощью комментариев можно уточнить или дополнить какую-то информацию из заметки, и как показывает опыт того же Хабра, случается, что комментарии становятся ценнее замой заметки.</p>
-<p>Когда-то давно я уже писал бестолковую заметку о том, что на сайте появились комментарии, она так и называется <a href="/notes/comment-in-the-blog/">&ldquo;Комментарии к блогу&rdquo;</a>, но устройство сайта с тех пор изменилось. Более того, времена и законы изменились, что оказалось даже важнее технической составляющей и сейчас я попробую объяснить, почему комментариев на сайте пока не будет, даже если этого очень хочется.</p>
+<p>Когда-то давно я уже писал бестолковую заметку о том, что на сайте появились комментарии, но устройство сайта с тех пор изменилось. Более того, времена и законы изменились, что оказалось даже важнее технической составляющей и сейчас я попробую объяснить, почему комментариев на сайте пока не будет, даже если этого очень хочется.</p>
 <p>Сначала технические нюансы. Так как сайт статический, а комментарии подразумевают собой, что кто-то может придти и в любое время написать свое мнение, то совместить эти две вещи не так просто на первый взгляд. Благодаря заметке Darek Kay <a href="https://darekkay.com/blog/static-site-comments/">&ldquo;Various ways to include comments on your static site&rdquo;</a> у меня был большой список решений, чтобы подобрать подходящее, начиная с самых известных и простых типа Disqus и доходя до совсем экзотических, которые используют раздел Issues на GitHub для хранения комментариев, или того хуже, требуют написание lambda-функции и запуска её на мощностях Amazon. Самым перспективным показался инструмент Remark42, так как его можно запустить на своем хостинге, это безопаснее, и к тому же автор инструмента – довольно известный <a href="http://www.umputun.com/">Umputun</a>. И я готов был добавить на сайт комментарии, пока не вспомнил о <a href="http://www.government.by/upload/docs/file944b1e7301d5a698.PDF">Постановлении Совета Министров №850 от 23 ноября 2018 года</a>.</p>
 <p>Согласно документу, все комментарии на всех белорусских сайтах должны обрабатываться и храниться согласно правилам, описанным в этом самом постановлении. Т.е. чтобы дать возможность комментировать на сайте, мне нужно с каждым комментатором заключить соглашение с правилами поведения на сайте, иденцифицировать (желательно с помощью СМС) комментатора и убедиться, что у него только один аккаунт для этого сайта, а потом хранить все данные о комментариях, включая IP-адрес и другие сведения 2 года и предоставлять всю информацию органам по первому же запросу. У меня довольно простой, пока что мало кому известный, личный сайт, а мне нужно целую информационную систему запустить и обслуживать, иначе – немаленький штраф. Оно мне надо?</p>
 <p>Большие сайты, за которыми стоят компании, конечно же внесли изменения и сделали всё по закону, но их понять можно, там под угрозой бизнес и деньги, но для личного сайта такие жесткие правила – излишество. Поэтому я решил вовсе отказаться от комментариев на своем сайте, дабы не подвергать себя риску преследования и не делать бесполезную, по сути, работу по хранению нескольких десятков мнений сторонних людей, пускай и весьма ценных. Экономически не выгодно то есть.</p>
@@ -238,7 +224,7 @@
                 </div>
                 <div class="tags are-medium">
                     <span class="tag">На чтение понадобилось 3 минуты</span>
-                    <span class="tag">В заметке 547 слов</span>
+                    <span class="tag">В заметке 540 слов</span>
                 </div>
 
                 <aside class="menu under-post-navigation">
@@ -284,7 +270,7 @@
 <div class="message is-primary is-size-6">
     <div class="message-body">
         <div class="title is-size-5">На сайте отключена возможность комментировать</div>
-        <div class="subtitle is-size-6">Это решение я подробно объясняю в заметке <a href="https://klimchuk.by/notes/no-comments/">Комментариев на сайте не будет</a></div>
+        <div class="subtitle is-size-6">Это решение я подробно объясняю в заметке <a href=""></a></div>
         <p>Обсудить заметку можно связавшись со мной любым из предложенным ниже способов.<br/>Я отвечу на ваш вопрос или предложение и опубликую результат нашего обсуждения в заметке.</p>
         <br>
         <div class="buttons are-small">
@@ -317,13 +303,9 @@
                         
                             <li><a href="/notes/just-podcast-episode-0/">Пилотный выпуск Просто подкаста</a></li>
                         
-                            <li><a href="/notes/css-naked-day/">CSS Naked Day</a></li>
-                        
                             <li><a href="/notes/ubuntu-and-asus-eee-pc/">Ubuntu и ASUS EEE PC — настраиваем подсветку экрана</a></li>
                         
                             <li><a href="/notes/ruby-python-more-meetup/">Ruby, Python &amp; more Meetup</a></li>
-                        
-                            <li><a href="/notes/stopped-working-vk/">Перестал работать Вконтакте</a></li>
                         
                             <li><a href="/notes/round-table-on-rails-in-minsk/">Завершился круглый стол по Rails в Минске</a></li>
                         
@@ -344,9 +326,7 @@
             </div>
             <div class="level-right">
                 <div class="content">
-                    <a class="button is-small is-info is-rounded" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" title="Лицензия">CC BY-NC-SA 4.0</a>
-                    <a class="button is-small is-info is-rounded" href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a>
-                    <a class="button is-small is-dark is-rounded" target="_blank" rel="noopener" href="https://github.com/Alroniks">GitHub</a>
+                    <a target="_blank" rel="noopener" href="https://klimchuk.com">klimchuk.com</a>
                 </div>
             </div>
         </div>
@@ -354,6 +334,8 @@
 </footer>
 
 
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
 </body>
 </html>
