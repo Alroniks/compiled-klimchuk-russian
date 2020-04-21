@@ -185,6 +185,20 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/talks/</loc>
+    <lastmod>2011-08-12T21:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://klimchuk.by/talks/psc-rcm/</loc>
+    <lastmod>2011-08-12T21:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/notes/good-and-evil/</loc>
     <lastmod>2011-07-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
