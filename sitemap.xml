@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>https://klimchuk.by/categories/development/</loc>
+    <lastmod>2020-07-14T06:00:57+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://klimchuk.by/notes/custom-field-type-in-modx-system-settings/</loc>
     <lastmod>2020-07-14T06:00:57+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -25,13 +32,6 @@
   
   <url>
     <loc>https://klimchuk.by/notes/language-switcher-in-modx-3/</loc>
-    <lastmod>2020-02-20T06:00:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/categories/development/</loc>
     <lastmod>2020-02-20T06:00:52+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -449,12 +449,6 @@
   
   <url>
     <loc>https://klimchuk.by/places/years/2019/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://klimchuk.by/categories/categories/development/_index.md/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

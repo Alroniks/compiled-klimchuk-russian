@@ -6,7 +6,7 @@
     <description>Recent content in Разработка on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-BY</language>
-    <lastBuildDate>Thu, 20 Feb 2020 06:00:52 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2020 06:00:57 +0000</lastBuildDate>
     
 	<atom:link href="https://klimchuk.by/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,6 +20,15 @@
       <description>Иван Климчук, программист
 и просто хороший человек
 Люблю open source, белорусский язык, велосипед и покодить</description>
+    </item>
+    
+    <item>
+      <title>Собственный тип поля в системных настройках</title>
+      <link>https://klimchuk.by/notes/custom-field-type-in-modx-system-settings/</link>
+      <pubDate>Tue, 14 Jul 2020 06:00:57 +0000</pubDate>
+      
+      <guid>https://klimchuk.by/notes/custom-field-type-in-modx-system-settings/</guid>
+      <description>На днях в чате MODX в Telegram появился вопрос о том, как добавить в системные настройки свой собственный тип для полей. Я подобное уже делал в своих компонентах и был готов рассказать прямо там, в чате, однако, когда начал вникать в суть вопроса, понял, что задача чуть сложнее, чем показалось в начале, и заслуживает отдельной заметки.</description>
     </item>
     
     <item>
