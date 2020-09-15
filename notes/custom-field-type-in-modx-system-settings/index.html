@@ -5,7 +5,7 @@
     <title>Собственный тип поля в системных настройках</title>
   
 
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.75.0" />
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@
     
 
 
-<link href="https://klimchuk.by/css/theme.min.5f6a6d3667a394e9bbb62a66f547bb9f73bf15e956227fde7abacbebc7323e55.css" rel="stylesheet" type="text/css">
+<link href="https://klimchuk.by/css/theme.min.32d9f1375d55076665e3a7878d282152613df862bdf9a371adb19c454f2b7a98.css" rel="stylesheet" type="text/css">
 
 <script>
     
@@ -322,7 +322,7 @@ Ext.reg(<span style="color:#d14">&#39;modx-combo-xtype-spec&#39;</span>, TypesLi
 <h2 id="регистрация-frontend-компонентов-через-плагин">Регистрация frontend-компонентов через плагин</h2>
 <p>Система плагинов в MODX уникальна тем, что позволяет достаточно легко внедриться в процесс формирования страницы и загрузить дополнительный код в нужный промежуток времени. Таким образом, у нас есть возможность загрузить наши плагины и компоненты до начала генерации страницы панели управления, тем самым изменить поведение по умолчанию.</p>
 <p>Для того, чтобы загрузить наши файлы, нужно создать плагин, который будет реагировать на событие  <code>OnManagerPageBeforeRender</code>. Важно не забыть отметить это событие на вкладке &ldquo;Системные события&rdquo; при создании плагина. Затем в коде самого плагина указать, какие файлы подключить. Полный код плагина чуть длиннее, но за кадром остались лишь дополнительные проверки, которые позволяют плагину срабатывать только когда есть необходимость. <em><a href="https://gist.github.com/Alroniks/3c0a204bb46d3016b33eb5b6c27cf2b2#file-customsettingfields-php">Полный код плагина на GitHub Gists.</a></em></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#999;font-weight:bold;font-style:italic">&lt;?php</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#000;font-weight:bold">&lt;?</span>php
 
 <span style="color:#008080">$pathPrefix</span> <span style="color:#000;font-weight:bold">=</span> MODX_ASSETS_URL <span style="color:#000;font-weight:bold">.</span> <span style="color:#d14">&#39;components/csf/js/mgr/&#39;</span>;
 

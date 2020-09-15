@@ -5,10 +5,6 @@
     <link>https://klimchuk.by/projects/</link>
     <description>Recent content in Проекты on Иван Климчук</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru-BY</language>
-    
-	<atom:link href="https://klimchuk.by/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>ru-BY</language><atom:link href="https://klimchuk.by/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
