@@ -267,16 +267,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://klimchuk.by/notes/tasty-food-at-home-2/</loc>
-    <lastmod>2010-07-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://klimchuk.by/categories/other/</loc>
-    <lastmod>2010-07-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://klimchuk.by/notes/counting-incorrect/</loc>
     <lastmod>2010-07-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -363,6 +353,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://klimchuk.by/categories/psychology/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://klimchuk.by/categories/other/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
