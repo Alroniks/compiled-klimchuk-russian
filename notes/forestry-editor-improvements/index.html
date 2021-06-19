@@ -5,7 +5,7 @@
     <title>Улучшаем редактор заметок в Forestry</title>
   
 
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.84.0" />
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,7 +40,7 @@
     
 
 
-<link href="https://klimchuk.by/css/theme.min.53fde1651d09f96f7463213a8fcfce173b58a854f3b882d760ce20601b32d2e4.css" rel="stylesheet" type="text/css">
+<link href="https://klimchuk.by/css/theme.min.a2f9ea4e6747d9b7217a021754301d508c1966b0cf3a6be45dcc1c493a3077c1.css" rel="stylesheet" type="text/css">
 
 <script>
     
@@ -235,7 +235,7 @@
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#458;font-weight:bold">main-content</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000080">div</span>:<span style="color:#3c5d5d;font-weight:bold">last-child</span> {
     <span style="color:#000;font-weight:bold">display</span>: <span style="color:#000;font-weight:bold">flex</span>;
     <span style="color:#000;font-weight:bold">flex-wrap</span>: <span style="color:#000;font-weight:bold">wrap</span>;
-    <span style="color:#000;font-weight:bold">flex-direction</span>: <span style="color:#000;font-weight:bold">row</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000;font-weight:bold">reverse</span>;
+    <span style="color:#000;font-weight:bold">flex-direction</span>: <span style="color:#000;font-weight:bold">row-reverse</span>;
 }
 </code></pre></div><p>Но ничего не поменялось. Все из-за того, что у вложенных блоков указано свойство <code>position: fixed;</code>, которое заставляет их игнорировать все правила по автоматическому размещению во flex-блоках. Нужно его сбросить на значение по умолчанию.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#458;font-weight:bold">main-content</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000080">div</span>:<span style="color:#3c5d5d;font-weight:bold">last-child</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000080">div</span> {
